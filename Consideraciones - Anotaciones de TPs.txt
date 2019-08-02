@@ -1,0 +1,13 @@
+METODO DE BISECCION 
+
+Datos de entrada:
+-Funcion
+-Limite Derecho
+-Limite Izquierdo
+-Cantidad de iteraciones
+-Error Relativo / Tolerancia
+
+Datos de salida:
+-Iteraciones utilizadas
+-Error Relativo
+-Mejor solución encontrada
