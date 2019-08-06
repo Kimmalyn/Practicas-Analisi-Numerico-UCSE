@@ -33,11 +33,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.text1 = new System.Windows.Forms.TextBox();
+            this.text2 = new System.Windows.Forms.TextBox();
+            this.text3 = new System.Windows.Forms.TextBox();
+            this.text4 = new System.Windows.Forms.TextBox();
+            this.text5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,9 +45,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.iteraciones = new System.Windows.Forms.Label();
+            this.erelativo = new System.Windows.Forms.Label();
+            this.solucion = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -107,40 +107,40 @@
             this.label5.Text = "Tolerancia: ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // text1
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.text1.Location = new System.Drawing.Point(168, 99);
+            this.text1.Name = "text1";
+            this.text1.Size = new System.Drawing.Size(100, 20);
+            this.text1.TabIndex = 5;
             // 
-            // textBox2
+            // text2
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.text2.Location = new System.Drawing.Point(168, 125);
+            this.text2.Name = "text2";
+            this.text2.Size = new System.Drawing.Size(100, 20);
+            this.text2.TabIndex = 6;
             // 
-            // textBox3
+            // text3
             // 
-            this.textBox3.Location = new System.Drawing.Point(168, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.text3.Location = new System.Drawing.Point(168, 155);
+            this.text3.Name = "text3";
+            this.text3.Size = new System.Drawing.Size(100, 20);
+            this.text3.TabIndex = 7;
             // 
-            // textBox4
+            // text4
             // 
-            this.textBox4.Location = new System.Drawing.Point(168, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.text4.Location = new System.Drawing.Point(168, 183);
+            this.text4.Name = "text4";
+            this.text4.Size = new System.Drawing.Size(100, 20);
+            this.text4.TabIndex = 8;
             // 
-            // textBox5
+            // text5
             // 
-            this.textBox5.Location = new System.Drawing.Point(168, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.text5.Location = new System.Drawing.Point(168, 209);
+            this.text5.Name = "text5";
+            this.text5.Size = new System.Drawing.Size(100, 20);
+            this.text5.TabIndex = 9;
             // 
             // label6
             // 
@@ -211,29 +211,29 @@
             this.label11.Size = new System.Drawing.Size(265, 255);
             this.label11.TabIndex = 16;
             // 
-            // label12
+            // iteraciones
             // 
-            this.label12.BackColor = System.Drawing.Color.OldLace;
-            this.label12.Location = new System.Drawing.Point(507, 106);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 16);
-            this.label12.TabIndex = 17;
+            this.iteraciones.BackColor = System.Drawing.Color.OldLace;
+            this.iteraciones.Location = new System.Drawing.Point(507, 106);
+            this.iteraciones.Name = "iteraciones";
+            this.iteraciones.Size = new System.Drawing.Size(57, 16);
+            this.iteraciones.TabIndex = 17;
             // 
-            // label13
+            // erelativo
             // 
-            this.label13.BackColor = System.Drawing.Color.OldLace;
-            this.label13.Location = new System.Drawing.Point(507, 132);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(57, 16);
-            this.label13.TabIndex = 18;
+            this.erelativo.BackColor = System.Drawing.Color.OldLace;
+            this.erelativo.Location = new System.Drawing.Point(507, 132);
+            this.erelativo.Name = "erelativo";
+            this.erelativo.Size = new System.Drawing.Size(57, 16);
+            this.erelativo.TabIndex = 18;
             // 
-            // label14
+            // solucion
             // 
-            this.label14.BackColor = System.Drawing.Color.OldLace;
-            this.label14.Location = new System.Drawing.Point(507, 158);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 16);
-            this.label14.TabIndex = 19;
+            this.solucion.BackColor = System.Drawing.Color.OldLace;
+            this.solucion.Location = new System.Drawing.Point(507, 158);
+            this.solucion.Name = "solucion";
+            this.solucion.Size = new System.Drawing.Size(57, 16);
+            this.solucion.TabIndex = 19;
             // 
             // label15
             // 
@@ -260,20 +260,20 @@
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(662, 317);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.solucion);
+            this.Controls.Add(this.erelativo);
+            this.Controls.Add(this.iteraciones);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.text5);
+            this.Controls.Add(this.text4);
+            this.Controls.Add(this.text3);
+            this.Controls.Add(this.text2);
+            this.Controls.Add(this.text1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -295,11 +295,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox text1;
+        private System.Windows.Forms.TextBox text2;
+        private System.Windows.Forms.TextBox text3;
+        private System.Windows.Forms.TextBox text4;
+        private System.Windows.Forms.TextBox text5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -307,9 +307,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label iteraciones;
+        private System.Windows.Forms.Label erelativo;
+        private System.Windows.Forms.Label solucion;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
     }
