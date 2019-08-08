@@ -46,7 +46,7 @@ namespace Practica1
             int cont = 0;
             double xr = 0;
             bool band = false;
-            while (Funcion(funcion, xi) * Funcion(funcion, xd) > 0)
+            while (Funcion(text1.Text, Convert.ToDouble(text3.Text)) * Funcion(text1.Text, Convert.ToDouble(text2.Text)) > 0)
             {
                 MessageBox.Show("Ingrese los límites nuevamente.");
                 text3.Clear();

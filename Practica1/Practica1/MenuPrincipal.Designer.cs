@@ -57,8 +57,8 @@
             this.unidad1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.metodosCerradosToolStripMenuItem});
             this.unidad1ToolStripMenuItem.Name = "unidad1ToolStripMenuItem";
-            this.unidad1ToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.unidad1ToolStripMenuItem.Text = "unidad 1";
+            this.unidad1ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.unidad1ToolStripMenuItem.Text = "Unidad 1";
             // 
             // metodosCerradosToolStripMenuItem
             // 
@@ -67,38 +67,38 @@
             this.reglasFalsasToolStripMenuItem});
             this.metodosCerradosToolStripMenuItem.Name = "metodosCerradosToolStripMenuItem";
             this.metodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.metodosCerradosToolStripMenuItem.Text = "metodos cerrados";
+            this.metodosCerradosToolStripMenuItem.Text = "Metodos Cerrados";
             // 
             // bissecionToolStripMenuItem
             // 
             this.bissecionToolStripMenuItem.Name = "bissecionToolStripMenuItem";
             this.bissecionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bissecionToolStripMenuItem.Text = "bissecion";
+            this.bissecionToolStripMenuItem.Text = "Biseccion";
             this.bissecionToolStripMenuItem.Click += new System.EventHandler(this.bissecionToolStripMenuItem_Click);
             // 
             // reglasFalsasToolStripMenuItem
             // 
             this.reglasFalsasToolStripMenuItem.Name = "reglasFalsasToolStripMenuItem";
             this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reglasFalsasToolStripMenuItem.Text = "reglas falsas";
+            this.reglasFalsasToolStripMenuItem.Text = "Regla Falsa";
             // 
             // unidad2ToolStripMenuItem
             // 
             this.unidad2ToolStripMenuItem.Name = "unidad2ToolStripMenuItem";
-            this.unidad2ToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.unidad2ToolStripMenuItem.Text = "unidad 2";
+            this.unidad2ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.unidad2ToolStripMenuItem.Text = "Unidad 2";
             // 
             // unidad3ToolStripMenuItem
             // 
             this.unidad3ToolStripMenuItem.Name = "unidad3ToolStripMenuItem";
-            this.unidad3ToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.unidad3ToolStripMenuItem.Text = "unidad 3";
+            this.unidad3ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.unidad3ToolStripMenuItem.Text = "Unidad 3";
             // 
             // unidad4ToolStripMenuItem
             // 
             this.unidad4ToolStripMenuItem.Name = "unidad4ToolStripMenuItem";
-            this.unidad4ToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.unidad4ToolStripMenuItem.Text = "unidad 4";
+            this.unidad4ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.unidad4ToolStripMenuItem.Text = "Unidad 4";
             // 
             // MenuPrincipal
             // 
