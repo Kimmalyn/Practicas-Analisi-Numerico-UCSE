@@ -24,17 +24,9 @@ namespace Practica1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Funcion (string f,double lim)
+            double Funcion (double x)
             {
-                int cont = 0;
-                while (cont != f.Length)
-                {
-                    if (f[cont] == 'x' | f[cont] == 'X')
-                    {
-                        f[cont] = lim;
-                    }
-                }
-                return 0;
+                return 2 * (x * x) - 5;
             }
 
             double iter = Convert.ToDouble(text4.Text);
@@ -45,8 +37,9 @@ namespace Practica1
             double errorrelativo = 0;
             int cont = 0;
             double xr = 0;
+            double xant = 0;
             bool band = false;
-            while (Funcion(text1.Text, Convert.ToDouble(text3.Text)) * Funcion(text1.Text, Convert.ToDouble(text2.Text)) > 0)
+            while (Funcion(Convert.ToDouble(text3.Text)) * Funcion(Convert.ToDouble(text2.Text)) > 0)
             {
                 MessageBox.Show("Ingrese los límites nuevamente.");
                 text3.Clear();
@@ -55,9 +48,9 @@ namespace Practica1
             }
             while (cont < iter & band == false)
             {
-                if (Funcion(funcion, xi) * Funcion(funcion, xd) == 0)
+                if (Funcion(xi) * Funcion(xd) == 0)
                 {
-                    if (Funcion(funcion, xi) == 0)
+                    if (Funcion(xi) == 0)
                     {
                         solucion.Text = xi.ToString();
                         band = true;
@@ -74,11 +67,12 @@ namespace Practica1
                 }
                 else
                 {
-                    double xant = 0;
+                    
                     xr = (xi + xd) / 2;
                     cont++;
                     errorrelativo = Math.Abs((xr - xant) / xr);
-                    if (Math.Abs(Funcion(funcion,xr)) < tole | cont >= iter | errorrelativo < tole)
+                    double funcionenxr = Math.Abs(Funcion(xr));
+                    if (funcionenxr < tole | cont >= iter | errorrelativo < tole)
                     {
                         solucion.Text = xr.ToString();
                         band = true;
@@ -87,7 +81,7 @@ namespace Practica1
                     }
                     else
                     {
-                        if (Funcion(funcion, xi) * Funcion(funcion, xd) < 0)
+                        if (Funcion(xi) * Funcion(xd) < 0)
                         {
                             xd = xr;
                         }
