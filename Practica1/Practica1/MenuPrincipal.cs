@@ -23,5 +23,12 @@ namespace Practica1
             formulariobisseccion.Owner = this;
             formulariobisseccion.Show();
         }
+
+        private void reglasFalsasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formularioreglafalsa = new ReglaFalsa();
+            formularioreglafalsa.Owner = this;
+            formularioreglafalsa.Show();
+        }
     }
 }

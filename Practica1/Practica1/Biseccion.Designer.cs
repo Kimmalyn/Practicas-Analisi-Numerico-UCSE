@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.text1 = new System.Windows.Forms.TextBox();
             this.text2 = new System.Windows.Forms.TextBox();
             this.text3 = new System.Windows.Forms.TextBox();
             this.text4 = new System.Windows.Forms.TextBox();
@@ -106,13 +105,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Tolerancia: ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // text1
-            // 
-            this.text1.Location = new System.Drawing.Point(168, 99);
-            this.text1.Name = "text1";
-            this.text1.Size = new System.Drawing.Size(100, 20);
-            this.text1.TabIndex = 5;
             // 
             // text2
             // 
@@ -273,7 +265,6 @@
             this.Controls.Add(this.text4);
             this.Controls.Add(this.text3);
             this.Controls.Add(this.text2);
-            this.Controls.Add(this.text1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -295,7 +286,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox text1;
         private System.Windows.Forms.TextBox text2;
         private System.Windows.Forms.TextBox text3;
         private System.Windows.Forms.TextBox text4;

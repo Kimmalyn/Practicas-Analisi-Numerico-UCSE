@@ -81,6 +81,7 @@
             this.reglasFalsasToolStripMenuItem.Name = "reglasFalsasToolStripMenuItem";
             this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reglasFalsasToolStripMenuItem.Text = "Regla Falsa";
+            this.reglasFalsasToolStripMenuItem.Click += new System.EventHandler(this.reglasFalsasToolStripMenuItem_Click);
             // 
             // unidad2ToolStripMenuItem
             // 

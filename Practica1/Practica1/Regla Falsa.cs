@@ -1,6 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -10,35 +10,34 @@ using System.Windows.Forms;
 
 namespace Practica1
 {
-    public partial class Biseccion : Form
+    public partial class ReglaFalsa : Form
     {
-        public Biseccion()
+        public ReglaFalsa()
         {
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void Calcular_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double Funcion (double x)
+            decimal Funcion(decimal x)
             {
-                return 2 * (x * x) - 5;
+                decimal fraccion = 1 / 16;
+                return (fraccion * (x * x)) - 1;
             }
-            if (Funcion(Convert.ToDouble(text3.Text)) * Funcion(Convert.ToDouble(text2.Text)) <= 0)
+            decimal xi = Convert.ToDecimal(text3.Text);
+            decimal xd = Convert.ToDecimal(text2.Text);
+            decimal funcionenxi = Funcion(xi);
+            decimal funcionenxd = Funcion(xd);
+            if (Funcion(xd) * Funcion(xi) <= 0)
             {
-                double iter = Convert.ToDouble(text4.Text);
-                double tole = Convert.ToDouble(text5.Text);
-                double xi = Convert.ToDouble(text3.Text);
-                double xd = Convert.ToDouble(text2.Text);
-                double errorrelativo = 0;
+                decimal iter = Convert.ToDecimal(text4.Text);
+                decimal tole = Convert.ToDecimal(text5.Text);
+                decimal errorrelativo = 0;
                 int cont = 0;
-                double xr = 0;
-                double xant = 0;
+                decimal xr = 0;
+                decimal xant = 0;
                 bool band = false;
+
                 while (cont < iter & band == false)
                 {
                     if (Funcion(xi) * Funcion(xd) == 0)
@@ -60,10 +59,10 @@ namespace Practica1
                     }
                     else
                     {
-                        xr = (xi + xd) / 2;
+                        xr = ((Funcion(xi) * xd) - (Funcion(xd) * xi)) / (Funcion(xi) - Funcion(xd));
                         cont++;
                         errorrelativo = Math.Abs((xr - xant) / xr);
-                        double funcionenxr = Math.Abs(Funcion(xr));
+                        decimal funcionenxr = Math.Abs(Funcion(xr));
                         if (funcionenxr < tole | cont >= iter | errorrelativo < tole)
                         {
                             solucion.Text = xr.ToString();
@@ -73,7 +72,7 @@ namespace Practica1
                         }
                         else
                         {
-                            if (Funcion(xi) * Funcion(xd) < 0)
+                            if (Math.Abs(Funcion(xi)) > Math.Abs(Funcion(xd)))
                             {
                                 xd = xr;
                             }
