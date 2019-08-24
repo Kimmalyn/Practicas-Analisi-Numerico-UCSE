@@ -30,5 +30,19 @@ namespace Practica1
             formularioreglafalsa.Owner = this;
             formularioreglafalsa.Show();
         }
+
+        private void newtonRaphsonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formularionewtonraphson = new Newton_Raphson();
+            formularionewtonraphson.Owner = this;
+            formularionewtonraphson.Show();
+        }
+
+        private void secanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulariosecante = new Secante();
+            formulariosecante.Owner = this;
+            formulariosecante.Show();
+        }
     }
 }

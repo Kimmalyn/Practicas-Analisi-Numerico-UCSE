@@ -12,6 +12,8 @@ namespace Practica1
 {
     public partial class ReglaFalsa : Form
     {
+        private const double fraccion = (1/16);
+
         public ReglaFalsa()
         {
             InitializeComponent();
@@ -19,23 +21,23 @@ namespace Practica1
 
         private void Calcular_Click(object sender, EventArgs e)
         {
-            decimal Funcion(decimal x)
+            double Funcion(double x)
             {
-                decimal fraccion = 1 / 16;
+                //double fraccion = ReglaFalsa.fraccion;
                 return (fraccion * (x * x)) - 1;
             }
-            decimal xi = Convert.ToDecimal(text3.Text);
-            decimal xd = Convert.ToDecimal(text2.Text);
-            decimal funcionenxi = Funcion(xi);
-            decimal funcionenxd = Funcion(xd);
+            double xi = Convert.ToDouble(text3.Text);
+            double xd = Convert.ToDouble(text2.Text);
+            double funcionenxi = Funcion(xi);
+            double funcionenxd = Funcion(xd);
             if (Funcion(xd) * Funcion(xi) <= 0)
             {
-                decimal iter = Convert.ToDecimal(text4.Text);
-                decimal tole = Convert.ToDecimal(text5.Text);
-                decimal errorrelativo = 0;
+                double iter = Convert.ToDouble(text4.Text);
+                double tole = Convert.ToDouble(text5.Text);
+                double errorrelativo = 0;
                 int cont = 0;
-                decimal xr = 0;
-                decimal xant = 0;
+                double xr = 0;
+                double xant = 0;
                 bool band = false;
 
                 while (cont < iter & band == false)
@@ -62,7 +64,7 @@ namespace Practica1
                         xr = ((Funcion(xi) * xd) - (Funcion(xd) * xi)) / (Funcion(xi) - Funcion(xd));
                         cont++;
                         errorrelativo = Math.Abs((xr - xant) / xr);
-                        decimal funcionenxr = Math.Abs(Funcion(xr));
+                        double funcionenxr = Math.Abs(Funcion(xr));
                         if (funcionenxr < tole | cont >= iter | errorrelativo < tole)
                         {
                             solucion.Text = xr.ToString();

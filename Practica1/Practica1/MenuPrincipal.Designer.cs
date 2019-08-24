@@ -33,6 +33,9 @@
             this.metodosCerradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bissecionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reglasFalsasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.metodosAbiertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newtonRaphsonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.secanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +58,8 @@
             // unidad1ToolStripMenuItem
             // 
             this.unidad1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.metodosCerradosToolStripMenuItem});
+            this.metodosCerradosToolStripMenuItem,
+            this.metodosAbiertosToolStripMenuItem});
             this.unidad1ToolStripMenuItem.Name = "unidad1ToolStripMenuItem";
             this.unidad1ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad1ToolStripMenuItem.Text = "Unidad 1";
@@ -72,16 +76,39 @@
             // bissecionToolStripMenuItem
             // 
             this.bissecionToolStripMenuItem.Name = "bissecionToolStripMenuItem";
-            this.bissecionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bissecionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.bissecionToolStripMenuItem.Text = "Biseccion";
             this.bissecionToolStripMenuItem.Click += new System.EventHandler(this.bissecionToolStripMenuItem_Click);
             // 
             // reglasFalsasToolStripMenuItem
             // 
             this.reglasFalsasToolStripMenuItem.Name = "reglasFalsasToolStripMenuItem";
-            this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.reglasFalsasToolStripMenuItem.Text = "Regla Falsa";
             this.reglasFalsasToolStripMenuItem.Click += new System.EventHandler(this.reglasFalsasToolStripMenuItem_Click);
+            // 
+            // metodosAbiertosToolStripMenuItem
+            // 
+            this.metodosAbiertosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newtonRaphsonToolStripMenuItem,
+            this.secanteToolStripMenuItem});
+            this.metodosAbiertosToolStripMenuItem.Name = "metodosAbiertosToolStripMenuItem";
+            this.metodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.metodosAbiertosToolStripMenuItem.Text = "Metodos Abiertos";
+            // 
+            // newtonRaphsonToolStripMenuItem
+            // 
+            this.newtonRaphsonToolStripMenuItem.Name = "newtonRaphsonToolStripMenuItem";
+            this.newtonRaphsonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newtonRaphsonToolStripMenuItem.Text = "Newton - Raphson";
+            this.newtonRaphsonToolStripMenuItem.Click += new System.EventHandler(this.newtonRaphsonToolStripMenuItem_Click);
+            // 
+            // secanteToolStripMenuItem
+            // 
+            this.secanteToolStripMenuItem.Name = "secanteToolStripMenuItem";
+            this.secanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.secanteToolStripMenuItem.Text = "Secante";
+            this.secanteToolStripMenuItem.Click += new System.EventHandler(this.secanteToolStripMenuItem_Click);
             // 
             // unidad2ToolStripMenuItem
             // 
@@ -127,6 +154,9 @@
         private System.Windows.Forms.ToolStripMenuItem unidad2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unidad3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unidad4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem metodosAbiertosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newtonRaphsonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem secanteToolStripMenuItem;
     }
 }
 
