@@ -21,7 +21,7 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-                return 2 * (x * x) - 5;
+                return Math.Log(x)+(1/x)-3;
             }
 
             double valorinicial = Convert.ToDouble(text3.Text);
@@ -45,12 +45,20 @@ namespace Practica1
                     c = c + 1;
                     valorinicial = xr;
                     xant = xr;
+                    double funcionenvalorini = Math.Abs(Funcion(valorinicial));
                 }
                 if (c < iter)
                 {
-                    solucion.Text = xr.ToString();
-                    iteraciones.Text = c.ToString();
-                    erelativo.Text = error.ToString();
+                    if (double.IsNaN(Funcion(valorinicial)))
+                    {
+                        MessageBox.Show("En este punto la Funcion es divergente.");
+                    }
+                    else
+                    {
+                        solucion.Text = xr.ToString();
+                        iteraciones.Text = c.ToString();
+                        erelativo.Text = error.ToString();
+                    }
                 }
                 else
                 {
@@ -65,6 +73,11 @@ namespace Practica1
             }
 
             
+
+        }
+
+        private void Solucion_Click(object sender, EventArgs e)
+        {
 
         }
     }
