@@ -75,7 +75,7 @@ namespace Practica1
                         }
                         else
                         {
-                            if (Math.Abs(Funcion(xi)) > Math.Abs(Funcion(xd)))
+                            if (Math.Abs(Funcion(xi)) > Math.Abs(Funcion(xr)))
                             {
                                 xd = xr;
                             }

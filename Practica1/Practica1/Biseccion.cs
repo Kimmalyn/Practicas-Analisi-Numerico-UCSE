@@ -76,7 +76,7 @@ namespace Practica1
                         }
                         else
                         {
-                            if (Funcion(xi) * Funcion(xd) < 0)
+                            if (Funcion(xi) * Funcion(xr) < 0)
                             {
                                 xd = xr;
                             }
