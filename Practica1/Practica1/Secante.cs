@@ -21,7 +21,8 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-                return Math.Log(x) + (1 / x) - 3;
+                return ((12.5 * (x + 2)) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
+                    // EJERCICIO 2 Math.Log(x) + (1 / x) - 3;
             }
             double valorinicial1 = Convert.ToDouble(text1.Text);
             double valorinicial2 = Convert.ToDouble(text3.Text);
@@ -36,8 +37,8 @@ namespace Practica1
                
                 valorinicial1 = valorinicial2;
                 valorinicial2 = xr;
-                error = Math.Abs(valorinicial2 - valorinicial1) / valorinicial2;
-
+                error = Math.Abs((valorinicial2 - valorinicial1) / valorinicial2);
+                double ds = Math.Abs(Funcion(valorinicial2));
                 while (Math.Abs(Funcion(valorinicial2)) > tole & c < iter & error > tole)
                 {
                     c = c + 1;
@@ -45,7 +46,7 @@ namespace Practica1
                     
                     valorinicial1 = valorinicial2;
                     valorinicial2 = xr;
-                    error = Math.Abs(valorinicial2 - valorinicial1) / valorinicial2;
+                    error = Math.Abs((valorinicial2 - valorinicial1) / valorinicial2);
                     double dddd = Math.Abs(Funcion(xr));
                 }
                 if (c < iter)
