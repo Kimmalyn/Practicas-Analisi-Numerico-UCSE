@@ -24,8 +24,9 @@ namespace Practica1
             double Funcion(double x)
             {
                 //double fraccion = ReglaFalsa.fraccion;
-                //PUNTO2// return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
-                                return ((12.5 * (x + 2)) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
+                //EJERCICIO 1 // return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
+                                return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
+                // EJERCICIO 3 ((12.5 * (x + 2)) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
             }
             double xi = Convert.ToDouble(text3.Text);
             double xd = Convert.ToDouble(text2.Text);
