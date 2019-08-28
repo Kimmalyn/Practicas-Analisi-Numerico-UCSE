@@ -21,7 +21,7 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-                return Math.Log(x) + (1 / x) - 3;
+                return ((12.5 * (x + 2)) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
             }
             double valorinicial1 = Convert.ToDouble(text1.Text);
             double valorinicial2 = Convert.ToDouble(text3.Text);
