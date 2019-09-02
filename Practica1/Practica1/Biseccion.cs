@@ -52,14 +52,14 @@ namespace Practica1
                             solucion.Text = xi.ToString();
                             band = true;
                             iteraciones.Text = cont.ToString();
-                            erelativo.Text = errorrelativo.ToString();
+                            erelativo.Text = Convert.ToDecimal(errorrelativo).ToString();
                         }
                         else
                         {
                             solucion.Text = xd.ToString();
                             band = true;
                             iteraciones.Text = cont.ToString();
-                            erelativo.Text = errorrelativo.ToString();
+                            erelativo.Text = Convert.ToDecimal(errorrelativo).ToString();
                         }
                     }
                     else
@@ -73,7 +73,7 @@ namespace Practica1
                             solucion.Text = xr.ToString();
                             band = true;
                             iteraciones.Text = cont.ToString();
-                            erelativo.Text = errorrelativo.ToString();
+                            erelativo.Text = Convert.ToDecimal(errorrelativo).ToString();
                         }
                         else
                         {

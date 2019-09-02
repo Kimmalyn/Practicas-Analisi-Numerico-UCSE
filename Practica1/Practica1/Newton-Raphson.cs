@@ -58,7 +58,7 @@ namespace Practica1
                     {
                         solucion.Text = xr.ToString();
                         iteraciones.Text = c.ToString();
-                        erelativo.Text = error.ToString();
+                        erelativo.Text = Convert.ToDecimal(error).ToString();
                     }
                 }
                 else
@@ -70,7 +70,7 @@ namespace Practica1
             {
                 solucion.Text = valorinicial.ToString();
                 iteraciones.Text = c.ToString();
-                erelativo.Text = error.ToString();
+                erelativo.Text = Convert.ToDecimal(error).ToString();
             }
 
             
