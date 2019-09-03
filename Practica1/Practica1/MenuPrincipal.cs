@@ -44,5 +44,12 @@ namespace Practica1
             formulariosecante.Owner = this;
             formulariosecante.Show();
         }
+
+        private void MatricesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulariomatrices = new Matrices();
+            formulariomatrices.Owner = this;
+            formulariomatrices.Show();
+        }
     }
 }

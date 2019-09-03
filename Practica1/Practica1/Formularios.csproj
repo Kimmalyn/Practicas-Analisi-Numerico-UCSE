@@ -52,11 +52,11 @@
     <Compile Include="Biseccion.Designer.cs">
       <DependentUpon>Biseccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Matrices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Matrices.Designer.cs">
+      <DependentUpon>Matrices.cs</DependentUpon>
     </Compile>
     <Compile Include="Newton-Raphson.cs">
       <SubType>Form</SubType>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="Biseccion.resx">
       <DependentUpon>Biseccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Matrices.resx">
+      <DependentUpon>Matrices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Newton-Raphson.resx">
       <DependentUpon>Newton-Raphson.cs</DependentUpon>
