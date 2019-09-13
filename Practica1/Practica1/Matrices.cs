@@ -25,7 +25,6 @@ namespace Practica1
             List<double> Resultados = new List<double>();
             List<TextBox> lista_txt = new List<TextBox>();
             double tole = 0.0001;
-            double erelativo = 0;
             switch (checkedListBox1.SelectedIndex)
             {
                 case 0: //3x3
@@ -57,7 +56,6 @@ namespace Practica1
                 }
 
             }
-
 
             double coeficiente = 0;
             if (comboBox1.SelectedIndex == 0) //GAUSS-JORDAN
@@ -91,13 +89,14 @@ namespace Practica1
                 double[] resultadosi = new double[4];
                 double[] resultadosn = new double[4];
                 double resultadoparcial = 0;
+                bool band = false;
                 for (i = 0; i<= max; i++)
                 {
                     resultadosi[i] = 0;
                 }
+                resultadosn = resultadosi;
                 int iter = 0;
-                erelativo = 1;
-                while (iter < 100 & erelativo > tole)
+                while (iter < 100 & band == false)
                 {
                     for (i = 0; i < max; i++)
                     {
@@ -115,13 +114,20 @@ namespace Practica1
                                 }
                                 else
                                 {
-                                    resultadoparcial = resultadoparcial - resultadosi[i];
+                                    resultadoparcial = resultadoparcial - (M[i,j]*resultadosn[j]);
                                 }
                             }
                         }
                         resultadosn[i] = resultadoparcial;
                     }
+                    if ((resultadosn[0]-resultadosi[0]) <= tole && (resultadosn[1] - resultadosi[1]) <= tole && (resultadosn[2] - resultadosi[2]) <= tole && (resultadosn[3] - resultadosi[3]) <= tole && (resultadosn[4] - resultadosi[4]) <= tole)
+                    {
+                        band = true;
+                    }
+                    iter++;
+                    resultadosi = resultadosn;
                 }
+                
             }
         }
 
