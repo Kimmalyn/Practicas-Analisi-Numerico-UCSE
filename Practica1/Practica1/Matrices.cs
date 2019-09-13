@@ -21,46 +21,107 @@ namespace Practica1
         private void Button1_Click(object sender, EventArgs e)
         {
             int max = 0;
-            double[,] M = new double[6,5];
+            double[,] M = new double[6, 5];
+            List<double> Resultados = new List<double>();
             List<TextBox> lista_txt = new List<TextBox>();
+            double tole = 0.0001;
+            double erelativo = 0;
             switch (checkedListBox1.SelectedIndex)
             {
                 case 0: //3x3
                     lista_txt.Add(m11); lista_txt.Add(m12); lista_txt.Add(m13); lista_txt.Add(r1);
                     lista_txt.Add(m21); lista_txt.Add(m22); lista_txt.Add(m23); lista_txt.Add(r2);
                     lista_txt.Add(m31); lista_txt.Add(m32); lista_txt.Add(m33); lista_txt.Add(r3);
-                    max = 4;
+                    max = 3;
 
                     break;
                 case 1: //4x4
-                    max = 5;
+                    max = 4;
                     break;
                 case 2: //5x5
-                    max = 6;
+                    max = 5;
                     break;
                 default:
                     break;
             }
 
-            int i = 0; int j = 0;
+            int i = 0; int j = 0; int k = 0;
             foreach (var item in lista_txt)
             {
                 M[i, j] = double.Parse(item.Text);
-                i++;
+                j++;
+                if (j > max)
+                {
+                    j = 0;
+                    i++;
+                }
 
             }
 
 
-
+            double coeficiente = 0;
             if (comboBox1.SelectedIndex == 0) //GAUSS-JORDAN
             {
-
-
-
+                for (i = 0; i < max; i++)
+                {
+                    coeficiente = M[i, i];
+                    for (j = 0; j <= max; j++)
+                    {
+                        M[i, j] = M[i, j] / coeficiente;
+                    }
+                    for (j = 0; j < max; j++)
+                    {
+                        if (i != j)
+                        {
+                            coeficiente = M[i, j];
+                            for (k = 0; k <= max; k++)
+                            {
+                                M[j, k] = M[j, k] - (coeficiente * M[i, k]);
+                            }
+                        }
+                    }
+                }
+                for (i = 0; i < max; i++)
+                {
+                    Resultados.Add(M[i, max]);
+                }
             }
             else //GAUSS-SEIDEL
             {
-
+                double[] resultadosi = new double[4];
+                double[] resultadosn = new double[4];
+                double resultadoparcial = 0;
+                for (i = 0; i<= max; i++)
+                {
+                    resultadosi[i] = 0;
+                }
+                int iter = 0;
+                erelativo = 1;
+                while (iter < 100 & erelativo > tole)
+                {
+                    for (i = 0; i < max; i++)
+                    {
+                        for (j = 0; j <= max; j++)
+                        {
+                            if (j == 0)
+                            {
+                                resultadoparcial = M[i, max];
+                            }
+                            else
+                            {
+                                if (j == max)
+                                {
+                                    resultadoparcial = resultadoparcial / M[i, i];
+                                }
+                                else
+                                {
+                                    resultadoparcial = resultadoparcial - resultadosi[i];
+                                }
+                            }
+                        }
+                        resultadosn[i] = resultadoparcial;
+                    }
+                }
             }
         }
 
