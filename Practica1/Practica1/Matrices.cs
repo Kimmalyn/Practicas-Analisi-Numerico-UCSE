@@ -35,9 +35,18 @@ namespace Practica1
 
                     break;
                 case 1: //4x4
+                    lista_txt.Add(m11); lista_txt.Add(m12); lista_txt.Add(m13); lista_txt.Add(m14); lista_txt.Add(r1);
+                    lista_txt.Add(m21); lista_txt.Add(m22); lista_txt.Add(m23); lista_txt.Add(m24); lista_txt.Add(r2);
+                    lista_txt.Add(m31); lista_txt.Add(m32); lista_txt.Add(m33); lista_txt.Add(m34); lista_txt.Add(r3);
+                    lista_txt.Add(m41); lista_txt.Add(m42); lista_txt.Add(m43); lista_txt.Add(m44); lista_txt.Add(r4);
                     max = 4;
                     break;
                 case 2: //5x5
+                    lista_txt.Add(m11); lista_txt.Add(m12); lista_txt.Add(m13); lista_txt.Add(m14); lista_txt.Add(m15); lista_txt.Add(r1);
+                    lista_txt.Add(m21); lista_txt.Add(m22); lista_txt.Add(m23); lista_txt.Add(m24); lista_txt.Add(m25); lista_txt.Add(r2);
+                    lista_txt.Add(m31); lista_txt.Add(m32); lista_txt.Add(m33); lista_txt.Add(m34); lista_txt.Add(m35); lista_txt.Add(r3);
+                    lista_txt.Add(m41); lista_txt.Add(m42); lista_txt.Add(m43); lista_txt.Add(m44); lista_txt.Add(m45); lista_txt.Add(r4);
+                    lista_txt.Add(m51); lista_txt.Add(m52); lista_txt.Add(m53); lista_txt.Add(m54); lista_txt.Add(m55); lista_txt.Add(r5);
                     max = 5;
                     break;
                 default:
@@ -54,7 +63,6 @@ namespace Practica1
                     j = 0;
                     i++;
                 }
-
             }
 
             double coeficiente = 0;
@@ -83,6 +91,27 @@ namespace Practica1
                 {
                     Resultados.Add(M[i, max]);
                 }
+                switch (Resultados.Count)
+                {
+                    case 3:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        break;
+                    case 4:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        r4.Text = Resultados[3].ToString();
+                        break;
+                    case 5:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        r4.Text = Resultados[3].ToString();
+                        r5.Text = Resultados[4].ToString();
+                        break;
+                }
             }
             else //GAUSS-SEIDEL
             {
@@ -106,17 +135,18 @@ namespace Practica1
                             {
                                 resultadoparcial = M[i, max];
                             }
+                            if (j == max)
+                            {
+                                resultadoparcial = resultadoparcial / M[i, i];
+                            }
                             else
                             {
-                                if (j == max)
+                                if (i != j)
                                 {
-                                    resultadoparcial = resultadoparcial / M[i, i];
-                                }
-                                else
-                                {
-                                    resultadoparcial = resultadoparcial - (M[i,j]*resultadosn[j]);
+                                    resultadoparcial = resultadoparcial - (M[i, j] * resultadosn[j]);
                                 }
                             }
+                            
                         }
                         resultadosn[i] = resultadoparcial;
                     }

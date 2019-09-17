@@ -65,7 +65,7 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label15 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.e5 = new System.Windows.Forms.TextBox();
+            this.r5 = new System.Windows.Forms.TextBox();
             this.r4 = new System.Windows.Forms.TextBox();
             this.r3 = new System.Windows.Forms.TextBox();
             this.r2 = new System.Windows.Forms.TextBox();
@@ -402,46 +402,41 @@
             this.comboBox1.Size = new System.Drawing.Size(177, 33);
             this.comboBox1.TabIndex = 49;
             // 
-            // e5
+            // r5
             // 
-            this.e5.Location = new System.Drawing.Point(446, 314);
-            this.e5.Name = "e5";
-            this.e5.Size = new System.Drawing.Size(55, 31);
-            this.e5.TabIndex = 54;
-            this.e5.Visible = false;
+            this.r5.Location = new System.Drawing.Point(397, 314);
+            this.r5.Name = "r5";
+            this.r5.Size = new System.Drawing.Size(104, 31);
+            this.r5.TabIndex = 54;
             // 
             // r4
             // 
-            this.r4.Location = new System.Drawing.Point(446, 277);
+            this.r4.Location = new System.Drawing.Point(397, 277);
             this.r4.Name = "r4";
-            this.r4.Size = new System.Drawing.Size(55, 31);
+            this.r4.Size = new System.Drawing.Size(104, 31);
             this.r4.TabIndex = 53;
-            this.r4.Visible = false;
             // 
             // r3
             // 
-            this.r3.Location = new System.Drawing.Point(446, 240);
+            this.r3.Location = new System.Drawing.Point(397, 240);
             this.r3.Name = "r3";
-            this.r3.Size = new System.Drawing.Size(55, 31);
+            this.r3.Size = new System.Drawing.Size(104, 31);
             this.r3.TabIndex = 52;
-            this.r3.Visible = false;
             this.r3.TextChanged += new System.EventHandler(this.R3_TextChanged);
             // 
             // r2
             // 
-            this.r2.Location = new System.Drawing.Point(446, 203);
+            this.r2.Location = new System.Drawing.Point(397, 203);
             this.r2.Name = "r2";
-            this.r2.Size = new System.Drawing.Size(55, 31);
+            this.r2.Size = new System.Drawing.Size(104, 31);
             this.r2.TabIndex = 51;
-            this.r2.Visible = false;
             // 
             // r1
             // 
-            this.r1.Location = new System.Drawing.Point(446, 166);
+            this.r1.Location = new System.Drawing.Point(397, 166);
             this.r1.Name = "r1";
-            this.r1.Size = new System.Drawing.Size(55, 31);
+            this.r1.Size = new System.Drawing.Size(104, 31);
             this.r1.TabIndex = 50;
-            this.r1.Visible = false;
             // 
             // Matrices
             // 
@@ -449,7 +444,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(1069, 660);
-            this.Controls.Add(this.e5);
+            this.Controls.Add(this.r5);
             this.Controls.Add(this.r4);
             this.Controls.Add(this.r3);
             this.Controls.Add(this.r2);
@@ -537,7 +532,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox e5;
+        private System.Windows.Forms.TextBox r5;
         private System.Windows.Forms.TextBox r4;
         private System.Windows.Forms.TextBox r3;
         private System.Windows.Forms.TextBox r2;
