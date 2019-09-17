@@ -21,7 +21,7 @@ namespace Practica1
         private void Button1_Click(object sender, EventArgs e)
         {
             int max = 0;
-            double[,] M = new double[6, 5];
+            double[,] M = new double[5, 6];
             List<double> Resultados = new List<double>();
             List<TextBox> lista_txt = new List<TextBox>();
             double tole = 0.0001;
@@ -79,7 +79,7 @@ namespace Practica1
                     {
                         if (i != j)
                         {
-                            coeficiente = M[i, j];
+                            coeficiente = M[j, i];
                             for (k = 0; k <= max; k++)
                             {
                                 M[j, k] = M[j, k] - (coeficiente * M[i, k]);
