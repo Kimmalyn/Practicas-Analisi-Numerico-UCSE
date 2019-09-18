@@ -56,6 +56,7 @@ namespace Practica1
             int i = 0; int j = 0; int k = 0;
             foreach (var item in lista_txt)
             {
+                //double.Parse(item.Text);
                 M[i, j] = double.Parse(item.Text);
                 j++;
                 if (j > max)
@@ -153,7 +154,7 @@ namespace Practica1
                         }
                         resultadosn[i] = resultadoparcial;
                     }
-                    if ((resultadosn[0]-resultadosi[0]) <= tole && (resultadosn[1] - resultadosi[1]) <= tole && (resultadosn[2] - resultadosi[2]) <= tole && (resultadosn[3] - resultadosi[3]) <= tole && (resultadosn[4] - resultadosi[4]) <= tole)
+                    if ((Math.Abs(resultadosn[0])-Math.Abs(resultadosi[0])) <= tole && (Math.Abs(resultadosn[1]) - Math.Abs(resultadosi[1])) <= tole && (Math.Abs(resultadosn[2]) - Math.Abs(resultadosi[2])) <= tole && (Math.Abs(resultadosn[3]) - Math.Abs(resultadosi[3])) <= tole && (Math.Abs(resultadosn[4]) - Math.Abs(resultadosi[4])) <= tole)
                     {
                         band = true;
                     }
