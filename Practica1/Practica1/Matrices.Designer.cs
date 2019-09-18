@@ -408,6 +408,7 @@
             this.r5.Name = "r5";
             this.r5.Size = new System.Drawing.Size(104, 31);
             this.r5.TabIndex = 54;
+            this.r5.Visible = false;
             // 
             // r4
             // 
@@ -415,6 +416,7 @@
             this.r4.Name = "r4";
             this.r4.Size = new System.Drawing.Size(104, 31);
             this.r4.TabIndex = 53;
+            this.r4.Visible = false;
             // 
             // r3
             // 

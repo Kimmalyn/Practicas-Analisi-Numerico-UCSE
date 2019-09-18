@@ -171,6 +171,8 @@ namespace Practica1
                 m51.Visible = false; m52.Visible = false; m53.Visible = false; m54.Visible = false; m55.Visible = false;
                 m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
 
+                r4.Visible = false; r5.Visible = false;
+
             }
             else
             {
@@ -181,6 +183,8 @@ namespace Practica1
 
                     m51.Visible = true; m52.Visible = true; m53.Visible = true; m54.Visible = true; m55.Visible = true;
                     m15.Visible = true; m25.Visible = true; m35.Visible = true; m45.Visible = true; m55.Visible = true;
+
+                    r4.Visible = true; r5.Visible = true;
                 }
                 else //Si es 3x3
                 {
@@ -189,6 +193,9 @@ namespace Practica1
 
                     m51.Visible = false; m52.Visible = false; m53.Visible = false; m54.Visible = false; m55.Visible = false;
                     m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
+
+                    r4.Visible = true; r5.Visible = false;
+
                 }
             }
         }
