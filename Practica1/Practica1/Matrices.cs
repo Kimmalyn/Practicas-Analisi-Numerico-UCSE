@@ -115,15 +115,18 @@ namespace Practica1
             }
             else //GAUSS-SEIDEL
             {
-                double[] resultadosi = new double[4];
-                double[] resultadosn = new double[4];
+                double[] resultadosi = new double[5];
+                double[] resultadosn = new double[5];
                 double resultadoparcial = 0;
                 bool band = false;
                 for (i = 0; i<= max; i++)
                 {
                     resultadosi[i] = 0;
                 }
-                resultadosn = resultadosi;
+                for (i = 0; i <= max; i++)
+                {
+                    resultadosn[i] = 0;
+                }
                 int iter = 0;
                 while (iter < 100 & band == false)
                 {
@@ -155,9 +158,39 @@ namespace Practica1
                         band = true;
                     }
                     iter++;
-                    resultadosi = resultadosn;
+                    resultadosi[0] = resultadosn[0];
+                    resultadosi[1] = resultadosn[1];
+                    resultadosi[2] = resultadosn[2];
+                    resultadosi[3] = resultadosn[3];
+                    resultadosi[4] = resultadosn[4];
+
+
                 }
-                
+                for (i = 0; i < max; i++)
+                {
+                    Resultados.Add(resultadosn[i]);
+                }
+                switch (Resultados.Count)
+                {
+                    case 3:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        break;
+                    case 4:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        r4.Text = Resultados[3].ToString();
+                        break;
+                    case 5:
+                        r1.Text = Resultados[0].ToString();
+                        r2.Text = Resultados[1].ToString();
+                        r3.Text = Resultados[2].ToString();
+                        r4.Text = Resultados[3].ToString();
+                        r5.Text = Resultados[4].ToString();
+                        break;
+                }
             }
         }
 
@@ -166,12 +199,12 @@ namespace Practica1
             if (checkedListBox1.GetItemChecked(1) == true) //Si es 4x4
             {
                 m41.Visible = true; m42.Visible = true; m43.Visible = true; m44.Visible = true;
-                m14.Visible = true; m24.Visible = true; m34.Visible = true;
+                m14.Visible = true; m24.Visible = true; m34.Visible = true; 
 
                 m51.Visible = false; m52.Visible = false; m53.Visible = false; m54.Visible = false; m55.Visible = false;
                 m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
 
-                r4.Visible = false; r5.Visible = false;
+                r4.Visible = true; r5.Visible = false;
 
             }
             else
@@ -194,7 +227,7 @@ namespace Practica1
                     m51.Visible = false; m52.Visible = false; m53.Visible = false; m54.Visible = false; m55.Visible = false;
                     m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
 
-                    r4.Visible = true; r5.Visible = false;
+                    r4.Visible = false; r5.Visible = false;
 
                 }
             }
