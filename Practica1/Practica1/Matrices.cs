@@ -95,22 +95,23 @@ namespace Practica1
                 switch (Resultados.Count)
                 {
                     case 3:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
+                        //rf1.ReadOnly = false; rf2.ReadOnly = false;
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
                         break;
                     case 4:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
-                        r4.Text = Resultados[3].ToString();
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
+                        rf4.Text = Resultados[3].ToString();
                         break;
                     case 5:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
-                        r4.Text = Resultados[3].ToString();
-                        r5.Text = Resultados[4].ToString();
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
+                        rf4.Text = Resultados[3].ToString();
+                        rf5.Text = Resultados[4].ToString();
                         break;
                 }
             }
@@ -174,22 +175,22 @@ namespace Practica1
                 switch (Resultados.Count)
                 {
                     case 3:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
                         break;
                     case 4:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
-                        r4.Text = Resultados[3].ToString();
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
+                        rf4.Text = Resultados[3].ToString();
                         break;
                     case 5:
-                        r1.Text = Resultados[0].ToString();
-                        r2.Text = Resultados[1].ToString();
-                        r3.Text = Resultados[2].ToString();
-                        r4.Text = Resultados[3].ToString();
-                        r5.Text = Resultados[4].ToString();
+                        rf1.Text = Resultados[0].ToString();
+                        rf2.Text = Resultados[1].ToString();
+                        rf3.Text = Resultados[2].ToString();
+                        rf4.Text = Resultados[3].ToString();
+                        rf5.Text = Resultados[4].ToString();
                         break;
                 }
             }
@@ -206,6 +207,8 @@ namespace Practica1
                 m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
 
                 r4.Visible = true; r5.Visible = false;
+                rf4.Visible = true; rf5.Visible = false;
+
 
             }
             else
@@ -219,6 +222,7 @@ namespace Practica1
                     m15.Visible = true; m25.Visible = true; m35.Visible = true; m45.Visible = true; m55.Visible = true;
 
                     r4.Visible = true; r5.Visible = true;
+                    rf4.Visible = true; rf5.Visible = true;
                 }
                 else //Si es 3x3
                 {
@@ -229,7 +233,7 @@ namespace Practica1
                     m15.Visible = false; m25.Visible = false; m35.Visible = false; m45.Visible = false; m55.Visible = false;
 
                     r4.Visible = false; r5.Visible = false;
-
+                    rf4.Visible = false; rf5.Visible = false;
                 }
             }
         }
@@ -245,6 +249,16 @@ namespace Practica1
         }
 
         private void R3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
