@@ -24,7 +24,10 @@ namespace Practica1
             double[,] M = new double[5, 6];
             List<double> Resultados = new List<double>();
             List<TextBox> lista_txt = new List<TextBox>();
-            double tole = 0.0001;
+
+            //List<double> lista_txt = new List<double>();
+
+            double tole = 0.0001; //0.0001
             switch (checkedListBox1.SelectedIndex)
             {
                 case 0: //3x3
@@ -42,6 +45,21 @@ namespace Practica1
                     max = 4;
                     break;
                 case 2: //5x5
+                    //TEST EJ.5 GAUSS-JORDAN
+                    //lista_txt.Add(1); lista_txt.Add(1); lista_txt.Add(5); lista_txt.Add(0); lista_txt.Add(0); lista_txt.Add(0); //2
+                    //lista_txt.Add(2); lista_txt.Add(-0.5); lista_txt.Add(0); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(20); //3
+                    //lista_txt.Add(0); lista_txt.Add(-1); lista_txt.Add(0.25); lista_txt.Add(-0.2); lista_txt.Add(-0.2); lista_txt.Add(17); //4
+                    //lista_txt.Add(0.5); lista_txt.Add(0); lista_txt.Add(0.25); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(0); //5
+                    //lista_txt.Add(0); lista_txt.Add(1); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(4); lista_txt.Add(0); //1
+
+
+                    //TEST EJ.5 GAUSS-SEIDEL
+                    //lista_txt.Add(2); lista_txt.Add(-0.5); lista_txt.Add(0); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(20); //3
+                    //lista_txt.Add(0); lista_txt.Add(-1); lista_txt.Add(0.25); lista_txt.Add(-0.2); lista_txt.Add(-0.2); lista_txt.Add(17); //4
+                    //lista_txt.Add(1); lista_txt.Add(1); lista_txt.Add(5); lista_txt.Add(0); lista_txt.Add(0); lista_txt.Add(0); //2
+                    //lista_txt.Add(0.5); lista_txt.Add(0); lista_txt.Add(0.25); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(0); //5
+                    //lista_txt.Add(0); lista_txt.Add(1); lista_txt.Add(-1); lista_txt.Add(0); lista_txt.Add(4); lista_txt.Add(0); //1
+
                     lista_txt.Add(m11); lista_txt.Add(m12); lista_txt.Add(m13); lista_txt.Add(m14); lista_txt.Add(m15); lista_txt.Add(r1);
                     lista_txt.Add(m21); lista_txt.Add(m22); lista_txt.Add(m23); lista_txt.Add(m24); lista_txt.Add(m25); lista_txt.Add(r2);
                     lista_txt.Add(m31); lista_txt.Add(m32); lista_txt.Add(m33); lista_txt.Add(m34); lista_txt.Add(m35); lista_txt.Add(r3);
@@ -58,6 +76,7 @@ namespace Practica1
             {
                 //double.Parse(item.Text);
                 M[i, j] = double.Parse(item.Text);
+                //M[i, j] = item;
                 j++;
                 if (j > max)
                 {
@@ -95,7 +114,7 @@ namespace Practica1
                 switch (Resultados.Count)
                 {
                     case 3:
-                        //rf1.ReadOnly = false; rf2.ReadOnly = false;
+
                         rf1.Text = Resultados[0].ToString();
                         rf2.Text = Resultados[1].ToString();
                         rf3.Text = Resultados[2].ToString();
@@ -117,20 +136,20 @@ namespace Practica1
             }
             else //GAUSS-SEIDEL
             {
+                //tole = 0.01; MODIFICACION PARA EJ.5
+
                 double[] resultadosi = new double[5];
                 double[] resultadosn = new double[5];
                 double resultadoparcial = 0;
                 bool band = false;
-                for (i = 0; i<= max; i++)
+                for (i = 0; i < max; i++)
                 {
                     resultadosi[i] = 0;
-                }
-                for (i = 0; i <= max; i++)
-                {
                     resultadosn[i] = 0;
                 }
                 int iter = 0;
-                while (iter < 100 & band == false)
+
+                while (iter < 100 & band == false) // while (iter < 2 & band == false) // MODIFICACION PARA EJ.5
                 {
                     for (i = 0; i < max; i++)
                     {
