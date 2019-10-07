@@ -26,11 +26,7 @@ namespace Practica1
         {
             double Funcion (double x)
             {
-                return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
-                //EJERCICIO 3 ((12.5*(x+2))/(Math.Pow(x,2)+4*x+5))+2;
-                //PUNTO1// return (x*x*x*x*x - 1) * Math.Pow(2.71828,x) - 10;
-                //                return (Math.Pow(x, 5) - 1) * Math.Exp(x) - 10;
-
+                return ((10 * x + 20) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
             }
             if (Funcion(Convert.ToDouble(text3.Text)) * Funcion(Convert.ToDouble(text2.Text)) <= 0)
             {

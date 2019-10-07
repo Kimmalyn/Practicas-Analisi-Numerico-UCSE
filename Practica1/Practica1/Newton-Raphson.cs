@@ -21,9 +21,8 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-                return Math.Abs((x * x) - 4) + 2 * x;
-                    //EJERCICIO 2 Math.Log(x)+(1/x)-3;
-            } 
+                return ((10 * x + 20) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
+            }
 
             double valorinicial = Convert.ToDouble(text3.Text);
             double iter = Convert.ToDouble(text4.Text);
