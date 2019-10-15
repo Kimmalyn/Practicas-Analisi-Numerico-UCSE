@@ -21,10 +21,15 @@ namespace Practica1
         {
             double Funcion(double x)
             {
+<<<<<<< HEAD
                 return ((10 * x + 20) / ((x * x) + 4 * x + 5)) + 2;
                 //Math.Abs((x * x) - 4) + 2 * x;
                 //EJERCICIO 2 Math.Log(x)+(1/x)-3;
             } 
+=======
+                return ((10 * x + 20) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
+            }
+>>>>>>> 910929d6e8796240642aaf2264bd90a20491452f
 
             double valorinicial = Convert.ToDouble(text3.Text);
             double iter = Convert.ToDouble(text4.Text);
