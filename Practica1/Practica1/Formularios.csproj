@@ -53,11 +53,11 @@
     <Compile Include="Biseccion.Designer.cs">
       <DependentUpon>Biseccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Regresion lineal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Regresion lineal.Designer.cs">
+      <DependentUpon>Regresion lineal.cs</DependentUpon>
     </Compile>
     <Compile Include="Matrices.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="Biseccion.resx">
       <DependentUpon>Biseccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Regresion lineal.resx">
+      <DependentUpon>Regresion lineal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Matrices.resx">
       <DependentUpon>Matrices.cs</DependentUpon>
