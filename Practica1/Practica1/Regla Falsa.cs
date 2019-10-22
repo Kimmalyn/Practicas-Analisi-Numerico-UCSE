@@ -23,15 +23,12 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-<<<<<<< HEAD
+
                 //double fraccion = ReglaFalsa.fraccion;
                 //EJERCICIO 1 // return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
                 //return (x * x * x * x * x - 1) * Math.Pow(2.71828, x) - 10;
                 // EJERCICIO 3 ((12.5 * (x + 2)) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
                 return ((10*x+20)/((x*x)+4*x+5))+2;
-=======
-                return ((10 * x + 20) / (Math.Pow(x, 2) + 4 * x + 5)) + 2;
->>>>>>> 910929d6e8796240642aaf2264bd90a20491452f
             }
             double xi = Convert.ToDouble(text3.Text);
             double xd = Convert.ToDouble(text2.Text);

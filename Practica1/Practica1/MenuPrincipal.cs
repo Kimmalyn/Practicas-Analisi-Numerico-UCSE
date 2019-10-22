@@ -51,5 +51,12 @@ namespace Practica1
             formulariomatrices.Owner = this;
             formulariomatrices.Show();
         }
+
+        private void ajusteDeCurvasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formularioajustecurvas = new AjusteDeCurvas();
+            formularioajustecurvas.Owner = this;
+            formularioajustecurvas.Show();
+        }
     }
 }

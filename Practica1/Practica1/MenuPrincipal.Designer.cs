@@ -37,9 +37,10 @@
             this.newtonRaphsonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matricesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.matricesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajusteDeCurvasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,8 +54,7 @@
             this.unidad4ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1600, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,7 +64,7 @@
             this.metodosCerradosToolStripMenuItem,
             this.metodosAbiertosToolStripMenuItem});
             this.unidad1ToolStripMenuItem.Name = "unidad1ToolStripMenuItem";
-            this.unidad1ToolStripMenuItem.Size = new System.Drawing.Size(131, 38);
+            this.unidad1ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad1ToolStripMenuItem.Text = "Unidad 1";
             // 
             // metodosCerradosToolStripMenuItem
@@ -73,20 +73,20 @@
             this.bissecionToolStripMenuItem,
             this.reglasFalsasToolStripMenuItem});
             this.metodosCerradosToolStripMenuItem.Name = "metodosCerradosToolStripMenuItem";
-            this.metodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.metodosCerradosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.metodosCerradosToolStripMenuItem.Text = "Metodos Cerrados";
             // 
             // bissecionToolStripMenuItem
             // 
             this.bissecionToolStripMenuItem.Name = "bissecionToolStripMenuItem";
-            this.bissecionToolStripMenuItem.Size = new System.Drawing.Size(265, 44);
+            this.bissecionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.bissecionToolStripMenuItem.Text = "Biseccion";
             this.bissecionToolStripMenuItem.Click += new System.EventHandler(this.bissecionToolStripMenuItem_Click);
             // 
             // reglasFalsasToolStripMenuItem
             // 
             this.reglasFalsasToolStripMenuItem.Name = "reglasFalsasToolStripMenuItem";
-            this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(265, 44);
+            this.reglasFalsasToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.reglasFalsasToolStripMenuItem.Text = "Regla Falsa";
             this.reglasFalsasToolStripMenuItem.Click += new System.EventHandler(this.reglasFalsasToolStripMenuItem_Click);
             // 
@@ -96,20 +96,20 @@
             this.newtonRaphsonToolStripMenuItem,
             this.secanteToolStripMenuItem});
             this.metodosAbiertosToolStripMenuItem.Name = "metodosAbiertosToolStripMenuItem";
-            this.metodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.metodosAbiertosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.metodosAbiertosToolStripMenuItem.Text = "Metodos Abiertos";
             // 
             // newtonRaphsonToolStripMenuItem
             // 
             this.newtonRaphsonToolStripMenuItem.Name = "newtonRaphsonToolStripMenuItem";
-            this.newtonRaphsonToolStripMenuItem.Size = new System.Drawing.Size(349, 44);
+            this.newtonRaphsonToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.newtonRaphsonToolStripMenuItem.Text = "Newton - Raphson";
             this.newtonRaphsonToolStripMenuItem.Click += new System.EventHandler(this.newtonRaphsonToolStripMenuItem_Click);
             // 
             // secanteToolStripMenuItem
             // 
             this.secanteToolStripMenuItem.Name = "secanteToolStripMenuItem";
-            this.secanteToolStripMenuItem.Size = new System.Drawing.Size(349, 44);
+            this.secanteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.secanteToolStripMenuItem.Text = "Secante";
             this.secanteToolStripMenuItem.Click += new System.EventHandler(this.secanteToolStripMenuItem_Click);
             // 
@@ -118,36 +118,44 @@
             this.unidad2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matricesToolStripMenuItem});
             this.unidad2ToolStripMenuItem.Name = "unidad2ToolStripMenuItem";
-            this.unidad2ToolStripMenuItem.Size = new System.Drawing.Size(131, 38);
+            this.unidad2ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad2ToolStripMenuItem.Text = "Unidad 2";
+            // 
+            // matricesToolStripMenuItem
+            // 
+            this.matricesToolStripMenuItem.Name = "matricesToolStripMenuItem";
+            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.matricesToolStripMenuItem.Text = "Matrices";
+            this.matricesToolStripMenuItem.Click += new System.EventHandler(this.MatricesToolStripMenuItem_Click);
             // 
             // unidad3ToolStripMenuItem
             // 
+            this.unidad3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajusteDeCurvasToolStripMenuItem});
             this.unidad3ToolStripMenuItem.Name = "unidad3ToolStripMenuItem";
-            this.unidad3ToolStripMenuItem.Size = new System.Drawing.Size(131, 38);
+            this.unidad3ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad3ToolStripMenuItem.Text = "Unidad 3";
             // 
             // unidad4ToolStripMenuItem
             // 
             this.unidad4ToolStripMenuItem.Name = "unidad4ToolStripMenuItem";
-            this.unidad4ToolStripMenuItem.Size = new System.Drawing.Size(131, 38);
+            this.unidad4ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad4ToolStripMenuItem.Text = "Unidad 4";
             // 
-            // matricesToolStripMenuItem
+            // ajusteDeCurvasToolStripMenuItem
             // 
-            this.matricesToolStripMenuItem.Name = "matricesToolStripMenuItem";
-            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.matricesToolStripMenuItem.Text = "Matrices";
-            this.matricesToolStripMenuItem.Click += new System.EventHandler(this.MatricesToolStripMenuItem_Click);
+            this.ajusteDeCurvasToolStripMenuItem.Name = "ajusteDeCurvasToolStripMenuItem";
+            this.ajusteDeCurvasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajusteDeCurvasToolStripMenuItem.Text = "Ajuste de curvas";
+            this.ajusteDeCurvasToolStripMenuItem.Click += new System.EventHandler(this.ajusteDeCurvasToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MenuPrincipal";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
@@ -171,6 +179,7 @@
         private System.Windows.Forms.ToolStripMenuItem newtonRaphsonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem secanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matricesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajusteDeCurvasToolStripMenuItem;
     }
 }
 
