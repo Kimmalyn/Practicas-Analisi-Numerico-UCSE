@@ -244,9 +244,9 @@
             // label0
             // 
             this.label0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label0.Location = new System.Drawing.Point(393, 70);
+            this.label0.Location = new System.Drawing.Point(393, 21);
             this.label0.Name = "label0";
-            this.label0.Size = new System.Drawing.Size(52, 19);
+            this.label0.Size = new System.Drawing.Size(28, 19);
             this.label0.TabIndex = 63;
             this.label0.Text = "a0";
             this.label0.Visible = false;
@@ -254,9 +254,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(393, 90);
+            this.label1.Location = new System.Drawing.Point(393, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 19);
+            this.label1.Size = new System.Drawing.Size(28, 19);
             this.label1.TabIndex = 64;
             this.label1.Text = "a1";
             this.label1.Visible = false;
@@ -264,9 +264,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(393, 110);
+            this.label2.Location = new System.Drawing.Point(393, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.Size = new System.Drawing.Size(28, 20);
             this.label2.TabIndex = 65;
             this.label2.Text = "a2";
             this.label2.Visible = false;
@@ -274,9 +274,9 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(393, 130);
+            this.label3.Location = new System.Drawing.Point(393, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 20);
+            this.label3.Size = new System.Drawing.Size(28, 20);
             this.label3.TabIndex = 69;
             this.label3.Text = "a3";
             this.label3.Visible = false;
@@ -284,9 +284,9 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(393, 150);
+            this.label4.Location = new System.Drawing.Point(393, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 20);
+            this.label4.Size = new System.Drawing.Size(28, 20);
             this.label4.TabIndex = 68;
             this.label4.Text = "a4";
             this.label4.Visible = false;
@@ -294,9 +294,9 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 170);
+            this.label5.Location = new System.Drawing.Point(393, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(28, 17);
             this.label5.TabIndex = 67;
             this.label5.Text = "a5";
             this.label5.Visible = false;
@@ -304,9 +304,9 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(393, 190);
+            this.label6.Location = new System.Drawing.Point(393, 163);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 19);
+            this.label6.Size = new System.Drawing.Size(28, 19);
             this.label6.TabIndex = 70;
             this.label6.Text = "a6";
             this.label6.Visible = false;
@@ -314,9 +314,9 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(393, 210);
+            this.label7.Location = new System.Drawing.Point(393, 187);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 19);
+            this.label7.Size = new System.Drawing.Size(28, 19);
             this.label7.TabIndex = 71;
             this.label7.Text = "a7";
             this.label7.Visible = false;
@@ -324,9 +324,9 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(393, 230);
+            this.label8.Location = new System.Drawing.Point(393, 209);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 18);
+            this.label8.Size = new System.Drawing.Size(28, 18);
             this.label8.TabIndex = 72;
             this.label8.Text = "a8";
             this.label8.Visible = false;
@@ -334,9 +334,9 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(393, 250);
+            this.label9.Location = new System.Drawing.Point(393, 232);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 19);
+            this.label9.Size = new System.Drawing.Size(28, 19);
             this.label9.TabIndex = 73;
             this.label9.Text = "a9";
             this.label9.Visible = false;
@@ -344,9 +344,9 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(393, 270);
+            this.label10.Location = new System.Drawing.Point(383, 256);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 25);
+            this.label10.Size = new System.Drawing.Size(38, 25);
             this.label10.TabIndex = 74;
             this.label10.Text = "a10";
             this.label10.Visible = false;
@@ -354,7 +354,7 @@
             // a10
             // 
             this.a10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a10.Location = new System.Drawing.Point(437, 270);
+            this.a10.Location = new System.Drawing.Point(437, 256);
             this.a10.Name = "a10";
             this.a10.Size = new System.Drawing.Size(190, 25);
             this.a10.TabIndex = 85;
@@ -363,7 +363,7 @@
             // a9
             // 
             this.a9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a9.Location = new System.Drawing.Point(437, 250);
+            this.a9.Location = new System.Drawing.Point(437, 232);
             this.a9.Name = "a9";
             this.a9.Size = new System.Drawing.Size(190, 25);
             this.a9.TabIndex = 84;
@@ -372,7 +372,7 @@
             // a8
             // 
             this.a8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a8.Location = new System.Drawing.Point(437, 230);
+            this.a8.Location = new System.Drawing.Point(437, 209);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(190, 25);
             this.a8.TabIndex = 83;
@@ -381,7 +381,7 @@
             // a7
             // 
             this.a7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a7.Location = new System.Drawing.Point(437, 210);
+            this.a7.Location = new System.Drawing.Point(437, 187);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(190, 25);
             this.a7.TabIndex = 82;
@@ -390,7 +390,7 @@
             // a6
             // 
             this.a6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a6.Location = new System.Drawing.Point(437, 190);
+            this.a6.Location = new System.Drawing.Point(437, 163);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(190, 25);
             this.a6.TabIndex = 81;
@@ -399,7 +399,7 @@
             // a3
             // 
             this.a3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a3.Location = new System.Drawing.Point(437, 130);
+            this.a3.Location = new System.Drawing.Point(437, 91);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(190, 25);
             this.a3.TabIndex = 80;
@@ -408,7 +408,7 @@
             // a4
             // 
             this.a4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a4.Location = new System.Drawing.Point(437, 150);
+            this.a4.Location = new System.Drawing.Point(437, 113);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(190, 22);
             this.a4.TabIndex = 79;
@@ -417,16 +417,16 @@
             // a5
             // 
             this.a5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a5.Location = new System.Drawing.Point(437, 170);
+            this.a5.Location = new System.Drawing.Point(437, 138);
             this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(190, 25);
+            this.a5.Size = new System.Drawing.Size(190, 17);
             this.a5.TabIndex = 78;
             this.a5.Visible = false;
             // 
             // a2
             // 
             this.a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a2.Location = new System.Drawing.Point(437, 110);
+            this.a2.Location = new System.Drawing.Point(437, 66);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(190, 25);
             this.a2.TabIndex = 77;
@@ -435,7 +435,7 @@
             // a1
             // 
             this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a1.Location = new System.Drawing.Point(437, 90);
+            this.a1.Location = new System.Drawing.Point(437, 44);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(190, 25);
             this.a1.TabIndex = 76;
@@ -444,7 +444,7 @@
             // a0
             // 
             this.a0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a0.Location = new System.Drawing.Point(437, 70);
+            this.a0.Location = new System.Drawing.Point(437, 21);
             this.a0.Name = "a0";
             this.a0.Size = new System.Drawing.Size(190, 25);
             this.a0.TabIndex = 75;

@@ -37,6 +37,28 @@ namespace Practica1
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            label0.Visible = false;
+            a0.Visible = false;
+            label1.Visible = false;
+            a1.Visible = false;
+            label2.Visible = false;
+            a2.Visible = false;
+            label3.Visible = false;
+            a3.Visible = false;
+            label4.Visible = false;
+            a4.Visible = false;
+            label5.Visible = false;
+            a5.Visible = false;
+            label6.Visible = false;
+            a6.Visible = false;
+            label7.Visible = false;
+            a7.Visible = false;
+            label8.Visible = false;
+            a8.Visible = false;
+            label9.Visible = false;
+            a9.Visible = false;
+            label10.Visible = false;
+            a10.Visible = false;
             //N
             n = puntosx.Count;
 
@@ -71,8 +93,8 @@ namespace Practica1
             //MEDIA DE X
             double media_x = puntosx.Average();
 
-           if (comboBox1.SelectedIndex == 0)
-           {
+            if (comboBox1.SelectedIndex == 0)
+            {
                 Pendiente.Visible = true;
                 Ordenada.Visible = true;
 
@@ -108,179 +130,27 @@ namespace Practica1
 
 
             }
-           else
-           {
+            else
+            {
+
                 Pendiente.Visible = false;
                 Ordenada.Visible = false;
 
                 int grado = int.Parse(textBox3.Text);
-                switch (grado)
-                {
-                    case 1:
 
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        break;
-                    case 2:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        break;
-                    case 3:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        break;
-                    case 4:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        break;
-                    case 5:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        break;
-                    case 6:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        break;
-                    case 7:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        break;
-                    case 8:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        break;
-                    case 9:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        label9.Visible = true;
-                        a9.Visible = true;
-                        break;
-                    case 10:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        label9.Visible = true;
-                        a9.Visible = true;
-                        label10.Visible = true;
-                        a10.Visible = true;
-                        break;
-                }
-                double[,] matrix = new double[grado+1, grado+2];
+                double[,] matrix = new double[grado + 1, grado + 2];
                 ex = 0;
                 ey = 0;
 
                 for (int i = 0; i <= grado; i++)
                 {
-                    for (int j = 0; j <= grado+1; j++)
+                    for (int j = 0; j <= grado + 1; j++)
                     {
                         matrix[i, j] = 0;
                     }
                 }
 
-                for (int i = 0; i < n-1; i++)
+                for (int i = 0; i < n - 1; i++)
                 {
                     ex += puntosx[i];
                     ey += puntosy[i];
@@ -299,182 +169,278 @@ namespace Practica1
                 int a = 0;
                 int b = 0;
                 int d = 0;
-                for (a = 0; a < grado+1; a++)
+                for (a = 0; a < grado + 1; a++)
                 {
                     coeficiente = matrix[a, a];
-                    for (b = 0; b <= grado+1; b++)
+                    for (b = 0; b <= grado + 1; b++)
                     {
                         matrix[a, b] = matrix[a, b] / coeficiente;
                     }
-                    for (b = 0; b < grado+1; b++)
+                    for (b = 0; b < grado + 1; b++)
                     {
                         if (a != b)
                         {
                             coeficiente = matrix[b, a];
-                            for (d = 0; d <= grado+1; d++)
+                            for (d = 0; d <= grado + 1; d++)
                             {
                                 matrix[b, d] = matrix[b, d] - (coeficiente * matrix[a, d]);
                             }
                         }
                     }
                 }
-                for (a = 0; a < grado+1; a++)
-                {
-                    Resultados.Add(matrix[a, grado+1]);
-                }
-                switch (Resultados.Count)
-                {
-                    case 1:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
 
-                        break;
-                    case 2:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        break;
-                    case 3:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        break;
-                    case 4:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        break;
-                    case 5:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        break;
-                    case 6:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        break;
-                    case 7:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        break;
-                    case 8:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        break;
-                    case 9:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        label9.Visible = true;
-                        a9.Visible = true;
-                        break;
-                    case 10:
-                        label0.Visible = true;
-                        a0.Visible = true;
-                        label1.Visible = true;
-                        a1.Visible = true;
-                        label2.Visible = true;
-                        a2.Visible = true;
-                        label3.Visible = true;
-                        a3.Visible = true;
-                        label4.Visible = true;
-                        a4.Visible = true;
-                        label5.Visible = true;
-                        a5.Visible = true;
-                        label6.Visible = true;
-                        a6.Visible = true;
-                        label7.Visible = true;
-                        a7.Visible = true;
-                        label8.Visible = true;
-                        a8.Visible = true;
-                        label9.Visible = true;
-                        a9.Visible = true;
-                        label10.Visible = true;
-                        a10.Visible = true;
-                        break;
+                double ST = 0;
+                double SR = 0;
+                double S = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    ST = ST + Math.Pow((media_y - puntosy[i]), 2);
+                    S = 0;
+                    for (int j = 0; j <= grado; j++)
+                    {
+                        S = S + (matrix[j, grado + 1] * (Math.Pow(puntosx[i], j)));
+                    }
+                    SR = SR + (Math.Pow(S - puntosy[i], 2));
+                }
+                if (ST != 0)
+                {
+
+                
+                    for (a = 0; a < grado + 1; a++)
+                    {
+                        Resultados.Add(matrix[a, grado + 1]);
+                    }
+                    int ultimo = Resultados.Count() - 1;
+                    switch (Resultados.Count - 1)
+                    {
+                        case 1:
+
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[0].ToString();
+                            break;
+                        case 2:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            a1.Text = Resultados[1].ToString();
+                            a2.Text = Resultados[0].ToString();
+                            break;
+                        case 3:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[2].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[1].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[0].ToString();
+                            break;
+                        case 4:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[3].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[2].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[1].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[0].ToString();
+                            break;
+                        case 5:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[4].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[3].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[2].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[1].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[0].ToString();
+                            break;
+                        case 6:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[5].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[4].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[3].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[2].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[1].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[0].ToString();
+                            break;
+                        case 7:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[6].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[5].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[4].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[3].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[2].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[1].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[0].ToString();
+                            break;
+                        case 8:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[7].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[6].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[5].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[4].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[3].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[2].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[1].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[0].ToString();
+                            break;
+                        case 9:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[8].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[7].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[6].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[5].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[4].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[3].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[2].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[1].ToString();
+                            label9.Visible = true;
+                            a9.Visible = true;
+                            a9.Text = Resultados[0].ToString();
+                            break;
+                        case 10:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[9].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[8].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[7].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[6].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[5].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[4].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[3].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[2].ToString();
+                            label9.Visible = true;
+                            a9.Visible = true;
+                            a9.Text = Resultados[1].ToString();
+                            label10.Visible = true;
+                            a10.Visible = true;
+                            a10.Text = Resultados[0].ToString();
+                            break;
+                    }
+                    double r = 0;
+                    r = Math.Sqrt((ST - SR) / ST) * 100;
+
+                    if (r > 80)
+                        NAjuste.Text = "Aceptable " + r.ToString();
+                    else
+                        NAjuste.Text = " No Aceptable " + r.ToString(); ;
+                }
+                else
+                {
+                    NAjuste.Text = "Error: Division por cero.";
                 }
             }
         }
