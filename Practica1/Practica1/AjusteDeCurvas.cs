@@ -33,6 +33,8 @@ namespace Practica1
 
             textBox1.Text = "";
             textBox2.Text = "";
+
+            textBox1.Focus();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -69,7 +71,7 @@ namespace Practica1
             int c = 0;
             foreach (double item in puntosx)
             {
-                exy = item * puntosy[c];
+                exy = exy + (item * puntosy[c]);
                 c++;
             }
 
@@ -457,10 +459,41 @@ namespace Practica1
                     //GRADO
                     int grado = int.Parse(textBox3.Text);
 
+                    //PUNTO X
+                    double v = double.Parse(textBox4.Text);
+
                     while (i <= grado-1)
                     {
+                        Sa = 1; Sb = 1; int j = 0;
+                        while (j <= grado-1)
+                        {
+                            if (i != j)
+                            {
+                                Sa *= (v - puntosx[j]);
+                                Sb *= (puntosx[i] - puntosx[j]);
+                            }
+                            j++;
+                        }
+                        S += (puntosy[i] * (Sa / Sb));
+                        i++;
+
+                        //for (int j = 0; j < grado-1; j++)
+                        //{
+                        //    if (i != j)
+                        //    {
+                        //        Sa *= (v - puntosx[j]);
+                        //        Sb *= (puntosx[i] - puntosx[j]);
+                        //    }
+                        //}
 
                     }
+                    a0.Visible = true;
+                    a0.Text = S.ToString();
+                    //a1.Visible = true;
+                    //a1.Text = Sa.ToString();
+                    //a2.Visible = true;
+                    //a2.Text = Sb.ToString();
+
                 }
             }
         }
@@ -469,6 +502,12 @@ namespace Practica1
         {
             puntosx.Clear();
             puntosy.Clear();
+            exy = 0;
+            n = 0;
+            //Ex
+            ex = 0;
+            //Ey
+            ey = 0;
 
             a0.Text = "";
             a1.Text = "";
@@ -505,7 +544,10 @@ namespace Practica1
             a10.Visible = false;
             Pendiente.Visible = false;
             Ordenada.Visible = false;
-
+            Grado.Visible = false;
+            textBox3.Visible = false;
+            NPendiente.Visible = false;
+            NOrdenada.Visible = false;
         }
 
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -523,6 +565,10 @@ namespace Practica1
                 Ordenada.Visible = true;
                 NPendiente.Visible = true;
                 NOrdenada.Visible = true;
+                Grado.Visible = false;
+                textBox3.Visible = false;
+                PuntoX.Visible = false;
+                textBox4.Visible = false;
             }
             else
             {
@@ -532,8 +578,28 @@ namespace Practica1
                     Ordenada.Visible = false;
                     NPendiente.Visible = false;
                     NOrdenada.Visible = false;
+                    Grado.Visible = true;
+                    textBox3.Visible = true;
+                    PuntoX.Visible = false;
+                    textBox4.Visible = false;
+                }
+                else
+                {
+                    Pendiente.Visible = false;
+                    Ordenada.Visible = false;
+                    NPendiente.Visible = false;
+                    NOrdenada.Visible = false;
+                    Grado.Visible = true;
+                    textBox3.Visible = true;
+                    PuntoX.Visible = true;
+                    textBox4.Visible = true;
                 }
             }
+        }
+
+        private void Label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
