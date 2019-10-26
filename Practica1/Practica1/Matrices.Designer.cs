@@ -297,7 +297,6 @@
             this.label16.Size = new System.Drawing.Size(669, 44);
             this.label16.TabIndex = 45;
             this.label16.Text = "GAUSS-JORDAN Y GAUSS-SEIDEL";
-            this.label16.Click += new System.EventHandler(this.Label16_Click);
             // 
             // button1
             // 
@@ -365,7 +364,6 @@
             this.r3.Name = "r3";
             this.r3.Size = new System.Drawing.Size(89, 31);
             this.r3.TabIndex = 15;
-            this.r3.TextChanged += new System.EventHandler(this.R3_TextChanged);
             // 
             // r2
             // 
@@ -438,7 +436,6 @@
             this.label1.Size = new System.Drawing.Size(196, 25);
             this.label1.TabIndex = 55;
             this.label1.Text = "Resultados Finales";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 

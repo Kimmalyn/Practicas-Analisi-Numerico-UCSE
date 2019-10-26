@@ -37,28 +37,31 @@ namespace Practica1
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            label0.Visible = false;
-            a0.Visible = false;
-            label1.Visible = false;
-            a1.Visible = false;
-            label2.Visible = false;
-            a2.Visible = false;
-            label3.Visible = false;
-            a3.Visible = false;
-            label4.Visible = false;
-            a4.Visible = false;
-            label5.Visible = false;
-            a5.Visible = false;
-            label6.Visible = false;
-            a6.Visible = false;
-            label7.Visible = false;
-            a7.Visible = false;
-            label8.Visible = false;
-            a8.Visible = false;
-            label9.Visible = false;
-            a9.Visible = false;
-            label10.Visible = false;
-            a10.Visible = false;
+            //Modifica la visibilidad de los labels
+            {
+                label0.Visible = false;
+                a0.Visible = false;
+                label1.Visible = false;
+                a1.Visible = false;
+                label2.Visible = false;
+                a2.Visible = false;
+                label3.Visible = false;
+                a3.Visible = false;
+                label4.Visible = false;
+                a4.Visible = false;
+                label5.Visible = false;
+                a5.Visible = false;
+                label6.Visible = false;
+                a6.Visible = false;
+                label7.Visible = false;
+                a7.Visible = false;
+                label8.Visible = false;
+                a8.Visible = false;
+                label9.Visible = false;
+                a9.Visible = false;
+                label10.Visible = false;
+                a10.Visible = false;
+            }
             //N
             n = puntosx.Count;
 
@@ -165,6 +168,7 @@ namespace Practica1
                         }
                     }
 
+                    //RESULTADOS
                     List<double> Resultados = new List<double>();
                     double coeficiente = 0;
                     int a = 0;
@@ -190,6 +194,7 @@ namespace Practica1
                         }
                     }
 
+                    //VERIFICACION DE AJUSTE R
                     double ST = 0;
                     double SR = 0;
                     double S = 0;
@@ -442,33 +447,20 @@ namespace Practica1
                         NAjuste.Text = "Error: Division por cero.";
                     }
                 }
-            }
-        }
-
-        private void CheckedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            if (e.NewValue == CheckState.Checked && checkedListBox1.CheckedItems.Count > 0)
-            {
-                checkedListBox1.ItemCheck -= CheckedListBox1_ItemCheck;
-                checkedListBox1.SetItemChecked(checkedListBox1.CheckedIndices[0], false);
-                checkedListBox1.ItemCheck += CheckedListBox1_ItemCheck;
-            }
-
-            if (checkedListBox1.SelectedIndex == 0)
-            {
-                Pendiente.Visible = true;
-                Ordenada.Visible = true;
-                NPendiente.Visible = true;
-                NOrdenada.Visible = true;
-            }
-            else
-            {
-                if (checkedListBox1.SelectedIndex == 1)
+                else //LAGRANGE
                 {
-                    Pendiente.Visible = false;
-                    Ordenada.Visible = false;
-                    NPendiente.Visible = false;
-                    NOrdenada.Visible = false;
+                    int i = 0;
+                    double S = 0;
+                    double Sa = 0;
+                    double Sb = 0;
+
+                    //GRADO
+                    int grado = int.Parse(textBox3.Text);
+
+                    while (i <= grado-1)
+                    {
+
+                    }
                 }
             }
         }
@@ -516,9 +508,16 @@ namespace Practica1
 
         }
 
-        private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            if (checkedListBox1.SelectedIndex == 0)
+            if (e.NewValue == CheckState.Checked && checkedListBox1.CheckedItems.Count > 0)
+            {
+                checkedListBox1.ItemCheck -= checkedListBox1_ItemCheck;
+                checkedListBox1.SetItemChecked(checkedListBox1.CheckedIndices[0], false);
+                checkedListBox1.ItemCheck += checkedListBox1_ItemCheck;
+            }
+
+            if (checkedListBox1.SelectedIndex == 0) //Muestra los labels de Lineal
             {
                 Pendiente.Visible = true;
                 Ordenada.Visible = true;
@@ -527,7 +526,7 @@ namespace Practica1
             }
             else
             {
-                if (checkedListBox1.SelectedIndex == 0)
+                if (checkedListBox1.SelectedIndex == 1) //Oculta los labels de Lineal
                 {
                     Pendiente.Visible = false;
                     Ordenada.Visible = false;

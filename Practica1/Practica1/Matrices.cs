@@ -266,25 +266,5 @@ namespace Practica1
                 checkedListBox1.ItemCheck += CheckedListBox1_ItemCheck;
             }
         }
-
-        private void R3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Matrices_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
