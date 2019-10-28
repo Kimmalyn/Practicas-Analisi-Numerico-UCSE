@@ -451,49 +451,32 @@ namespace Practica1
                 }
                 else //LAGRANGE
                 {
-                    int i = 0;
-                    double S = 0;
-                    double Sa = 0;
-                    double Sb = 0;
-
                     //GRADO
-                    int grado = int.Parse(textBox3.Text);
+                    int grado = n - 1;
 
                     //PUNTO X
-                    double v = double.Parse(textBox4.Text);
+                    double valor = double.Parse(textBox4.Text);
 
-                    while (i <= grado-1)
+                    double S = 0;
+                    int i = 0;
+                    
+                    while (i <= grado)
                     {
-                        Sa = 1; Sb = 1; int j = 0;
-                        while (j <= grado-1)
+                        int j = 0;
+                        double L = 1;
+                        while (j <= grado)
                         {
                             if (i != j)
                             {
-                                Sa *= (v - puntosx[j]);
-                                Sb *= (puntosx[i] - puntosx[j]);
+                                L = L * ((valor - puntosx[j]) / (puntosx[i] - puntosx[j]));
                             }
                             j++;
                         }
-                        S += (puntosy[i] * (Sa / Sb));
+                        S = S + (L * puntosy[i]);
                         i++;
-
-                        //for (int j = 0; j < grado-1; j++)
-                        //{
-                        //    if (i != j)
-                        //    {
-                        //        Sa *= (v - puntosx[j]);
-                        //        Sb *= (puntosx[i] - puntosx[j]);
-                        //    }
-                        //}
-
                     }
                     a0.Visible = true;
                     a0.Text = S.ToString();
-                    //a1.Visible = true;
-                    //a1.Text = Sa.ToString();
-                    //a2.Visible = true;
-                    //a2.Text = Sb.ToString();
-
                 }
             }
         }
@@ -580,6 +563,8 @@ namespace Practica1
                     NOrdenada.Visible = false;
                     Grado.Visible = true;
                     textBox3.Visible = true;
+                    textBox3.Enabled = true;
+                    textBox3.Text = "";
                     PuntoX.Visible = false;
                     textBox4.Visible = false;
                 }
@@ -591,15 +576,12 @@ namespace Practica1
                     NOrdenada.Visible = false;
                     Grado.Visible = true;
                     textBox3.Visible = true;
+                    textBox3.Text = ((puntosx.Count)-1).ToString();
+                    textBox3.Enabled = false;
                     PuntoX.Visible = true;
                     textBox4.Visible = true;
                 }
             }
-        }
-
-        private void Label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
