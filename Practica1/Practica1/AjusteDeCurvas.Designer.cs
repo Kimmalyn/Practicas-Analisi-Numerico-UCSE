@@ -192,9 +192,9 @@
             // NAjuste
             // 
             this.NAjuste.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NAjuste.Location = new System.Drawing.Point(269, 309);
+            this.NAjuste.Location = new System.Drawing.Point(280, 296);
             this.NAjuste.Name = "NAjuste";
-            this.NAjuste.Size = new System.Drawing.Size(244, 16);
+            this.NAjuste.Size = new System.Drawing.Size(362, 16);
             this.NAjuste.TabIndex = 58;
             // 
             // NPendiente
@@ -506,19 +506,20 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(229, 273);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(229, 270);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 13);
+            this.label11.Size = new System.Drawing.Size(186, 16);
             this.label11.TabIndex = 90;
             this.label11.Text = "Funcion evaluada en el punto:";
             this.label11.Visible = false;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(396, 273);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(421, 270);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 13);
+            this.label12.Size = new System.Drawing.Size(221, 16);
             this.label12.TabIndex = 91;
             this.label12.Visible = false;
             // 

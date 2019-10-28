@@ -219,221 +219,220 @@ namespace Practica1
                         int ultimo = Resultados.Count() - 1;
                         switch (Resultados.Count - 1)
                         {
-                            case 1:
-
+                            case 1: //PREVIO - ultimo,0
                                 label0.Visible = true;
                                 a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                a1.Text = Resultados[0].ToString();
+                                a1.Text = Resultados[ultimo].ToString();
                                 break;
-                            case 2:
+                            case 2: //PREVIO - ultimo,1,0
                                 label0.Visible = true;
                                 a0.Visible = true;
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                label2.Visible = true;
-                                a2.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
                                 a1.Text = Resultados[1].ToString();
-                                a2.Text = Resultados[0].ToString();
-                                break;
-                            case 3:
-                                label0.Visible = true;
-                                a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
-                                label1.Visible = true;
-                                a1.Visible = true;
-                                a1.Text = Resultados[2].ToString();
                                 label2.Visible = true;
                                 a2.Visible = true;
-                                a2.Text = Resultados[1].ToString();
-                                label3.Visible = true;
-                                a3.Visible = true;
-                                a3.Text = Resultados[0].ToString();
+                                a2.Text = Resultados[ultimo].ToString();
                                 break;
-                            case 4:
+                            case 3: //PREVIO - ultimo,2,1,0
                                 label0.Visible = true;
                                 a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                a1.Text = Resultados[3].ToString();
+                                a1.Text = Resultados[1].ToString();
                                 label2.Visible = true;
                                 a2.Visible = true;
                                 a2.Text = Resultados[2].ToString();
                                 label3.Visible = true;
                                 a3.Visible = true;
-                                a3.Text = Resultados[1].ToString();
-                                label4.Visible = true;
-                                a4.Visible = true;
-                                a4.Text = Resultados[0].ToString();
+                                a3.Text = Resultados[ultimo].ToString();
                                 break;
-                            case 5:
+                            case 4: //PREVIO - ultimo,3,2,1,0
                                 label0.Visible = true;
                                 a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                a1.Text = Resultados[4].ToString();
+                                a1.Text = Resultados[1].ToString();
                                 label2.Visible = true;
                                 a2.Visible = true;
-                                a2.Text = Resultados[3].ToString();
-                                label3.Visible = true;
-                                a3.Visible = true;
-                                a3.Text = Resultados[2].ToString();
-                                label4.Visible = true;
-                                a4.Visible = true;
-                                a4.Text = Resultados[1].ToString();
-                                label5.Visible = true;
-                                a5.Visible = true;
-                                a5.Text = Resultados[0].ToString();
-                                break;
-                            case 6:
-                                label0.Visible = true;
-                                a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
-                                label1.Visible = true;
-                                a1.Visible = true;
-                                a1.Text = Resultados[5].ToString();
-                                label2.Visible = true;
-                                a2.Visible = true;
-                                a2.Text = Resultados[4].ToString();
+                                a2.Text = Resultados[2].ToString();
                                 label3.Visible = true;
                                 a3.Visible = true;
                                 a3.Text = Resultados[3].ToString();
                                 label4.Visible = true;
                                 a4.Visible = true;
-                                a4.Text = Resultados[2].ToString();
-                                label5.Visible = true;
-                                a5.Visible = true;
-                                a5.Text = Resultados[1].ToString();
-                                label6.Visible = true;
-                                a6.Visible = true;
-                                a6.Text = Resultados[0].ToString();
+                                a4.Text = Resultados[ultimo].ToString();
                                 break;
-                            case 7:
+                            case 5: //PREVIO - ultimo,4,3,2,1,0
                                 label0.Visible = true;
                                 a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                a1.Text = Resultados[6].ToString();
+                                a1.Text = Resultados[1].ToString();
                                 label2.Visible = true;
                                 a2.Visible = true;
-                                a2.Text = Resultados[5].ToString();
+                                a2.Text = Resultados[2].ToString();
                                 label3.Visible = true;
                                 a3.Visible = true;
-                                a3.Text = Resultados[4].ToString();
-                                label4.Visible = true;
-                                a4.Visible = true;
-                                a4.Text = Resultados[3].ToString();
-                                label5.Visible = true;
-                                a5.Visible = true;
-                                a5.Text = Resultados[2].ToString();
-                                label6.Visible = true;
-                                a6.Visible = true;
-                                a6.Text = Resultados[1].ToString();
-                                label7.Visible = true;
-                                a7.Visible = true;
-                                a7.Text = Resultados[0].ToString();
-                                break;
-                            case 8:
-                                label0.Visible = true;
-                                a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
-                                label1.Visible = true;
-                                a1.Visible = true;
-                                a1.Text = Resultados[7].ToString();
-                                label2.Visible = true;
-                                a2.Visible = true;
-                                a2.Text = Resultados[6].ToString();
-                                label3.Visible = true;
-                                a3.Visible = true;
-                                a3.Text = Resultados[5].ToString();
+                                a3.Text = Resultados[3].ToString();
                                 label4.Visible = true;
                                 a4.Visible = true;
                                 a4.Text = Resultados[4].ToString();
                                 label5.Visible = true;
                                 a5.Visible = true;
-                                a5.Text = Resultados[3].ToString();
-                                label6.Visible = true;
-                                a6.Visible = true;
-                                a6.Text = Resultados[2].ToString();
-                                label7.Visible = true;
-                                a7.Visible = true;
-                                a7.Text = Resultados[1].ToString();
-                                label8.Visible = true;
-                                a8.Visible = true;
-                                a8.Text = Resultados[0].ToString();
+                                a5.Text = Resultados[ultimo].ToString();
                                 break;
-                            case 9:
+                            case 6: //PREVIO - ultimo,5,4,3,2,1,0
                                 label0.Visible = true;
                                 a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
+                                a0.Text = Resultados[0].ToString();
                                 label1.Visible = true;
                                 a1.Visible = true;
-                                a1.Text = Resultados[8].ToString();
+                                a1.Text = Resultados[1].ToString();
                                 label2.Visible = true;
                                 a2.Visible = true;
-                                a2.Text = Resultados[7].ToString();
+                                a2.Text = Resultados[2].ToString();
                                 label3.Visible = true;
                                 a3.Visible = true;
-                                a3.Text = Resultados[6].ToString();
+                                a3.Text = Resultados[3].ToString();
                                 label4.Visible = true;
                                 a4.Visible = true;
-                                a4.Text = Resultados[5].ToString();
-                                label5.Visible = true;
-                                a5.Visible = true;
-                                a5.Text = Resultados[4].ToString();
-                                label6.Visible = true;
-                                a6.Visible = true;
-                                a6.Text = Resultados[3].ToString();
-                                label7.Visible = true;
-                                a7.Visible = true;
-                                a7.Text = Resultados[2].ToString();
-                                label8.Visible = true;
-                                a8.Visible = true;
-                                a8.Text = Resultados[1].ToString();
-                                label9.Visible = true;
-                                a9.Visible = true;
-                                a9.Text = Resultados[0].ToString();
-                                break;
-                            case 10:
-                                label0.Visible = true;
-                                a0.Visible = true;
-                                a0.Text = Resultados[ultimo].ToString();
-                                label1.Visible = true;
-                                a1.Visible = true;
-                                a1.Text = Resultados[9].ToString();
-                                label2.Visible = true;
-                                a2.Visible = true;
-                                a2.Text = Resultados[8].ToString();
-                                label3.Visible = true;
-                                a3.Visible = true;
-                                a3.Text = Resultados[7].ToString();
-                                label4.Visible = true;
-                                a4.Visible = true;
-                                a4.Text = Resultados[6].ToString();
+                                a4.Text = Resultados[4].ToString();
                                 label5.Visible = true;
                                 a5.Visible = true;
                                 a5.Text = Resultados[5].ToString();
                                 label6.Visible = true;
                                 a6.Visible = true;
-                                a6.Text = Resultados[4].ToString();
+                                a6.Text = Resultados[ultimo].ToString();
+                                break;
+                            case 7: //PREVIO - ultimo,6,5,4,3,2,1,0
+                                label0.Visible = true;
+                                a0.Visible = true;
+                                a0.Text = Resultados[0].ToString();
+                                label1.Visible = true;
+                                a1.Visible = true;
+                                a1.Text = Resultados[1].ToString();
+                                label2.Visible = true;
+                                a2.Visible = true;
+                                a2.Text = Resultados[2].ToString();
+                                label3.Visible = true;
+                                a3.Visible = true;
+                                a3.Text = Resultados[3].ToString();
+                                label4.Visible = true;
+                                a4.Visible = true;
+                                a4.Text = Resultados[4].ToString();
+                                label5.Visible = true;
+                                a5.Visible = true;
+                                a5.Text = Resultados[5].ToString();
+                                label6.Visible = true;
+                                a6.Visible = true;
+                                a6.Text = Resultados[6].ToString();
                                 label7.Visible = true;
                                 a7.Visible = true;
-                                a7.Text = Resultados[3].ToString();
+                                a7.Text = Resultados[ultimo].ToString();
+                                break;
+                            case 8: //PREVIO - ultimo,7,6,5,4,3,2,1,0
+                                label0.Visible = true;
+                                a0.Visible = true;
+                                a0.Text = Resultados[0].ToString();
+                                label1.Visible = true;
+                                a1.Visible = true;
+                                a1.Text = Resultados[1].ToString();
+                                label2.Visible = true;
+                                a2.Visible = true;
+                                a2.Text = Resultados[2].ToString();
+                                label3.Visible = true;
+                                a3.Visible = true;
+                                a3.Text = Resultados[3].ToString();
+                                label4.Visible = true;
+                                a4.Visible = true;
+                                a4.Text = Resultados[4].ToString();
+                                label5.Visible = true;
+                                a5.Visible = true;
+                                a5.Text = Resultados[5].ToString();
+                                label6.Visible = true;
+                                a6.Visible = true;
+                                a6.Text = Resultados[6].ToString();
+                                label7.Visible = true;
+                                a7.Visible = true;
+                                a7.Text = Resultados[7].ToString();
                                 label8.Visible = true;
                                 a8.Visible = true;
-                                a8.Text = Resultados[2].ToString();
+                                a8.Text = Resultados[ultimo].ToString();
+                                break;
+                            case 9: //PREVIO - ultimo,8,7,6,5,4,3,2,1,0
+                                label0.Visible = true;
+                                a0.Visible = true;
+                                a0.Text = Resultados[0].ToString();
+                                label1.Visible = true;
+                                a1.Visible = true;
+                                a1.Text = Resultados[1].ToString();
+                                label2.Visible = true;
+                                a2.Visible = true;
+                                a2.Text = Resultados[2].ToString();
+                                label3.Visible = true;
+                                a3.Visible = true;
+                                a3.Text = Resultados[3].ToString();
+                                label4.Visible = true;
+                                a4.Visible = true;
+                                a4.Text = Resultados[4].ToString();
+                                label5.Visible = true;
+                                a5.Visible = true;
+                                a5.Text = Resultados[5].ToString();
+                                label6.Visible = true;
+                                a6.Visible = true;
+                                a6.Text = Resultados[6].ToString();
+                                label7.Visible = true;
+                                a7.Visible = true;
+                                a7.Text = Resultados[7].ToString();
+                                label8.Visible = true;
+                                a8.Visible = true;
+                                a8.Text = Resultados[8].ToString();
                                 label9.Visible = true;
                                 a9.Visible = true;
-                                a9.Text = Resultados[1].ToString();
+                                a9.Text = Resultados[ultimo].ToString();
+                                break;
+                            case 10: //PREVIO - ultimo,9,8,7,6,5,4,3,2,1,0
+                                label0.Visible = true;
+                                a0.Visible = true;
+                                a0.Text = Resultados[0].ToString();
+                                label1.Visible = true;
+                                a1.Visible = true;
+                                a1.Text = Resultados[1].ToString();
+                                label2.Visible = true;
+                                a2.Visible = true;
+                                a2.Text = Resultados[2].ToString();
+                                label3.Visible = true;
+                                a3.Visible = true;
+                                a3.Text = Resultados[3].ToString();
+                                label4.Visible = true;
+                                a4.Visible = true;
+                                a4.Text = Resultados[4].ToString();
+                                label5.Visible = true;
+                                a5.Visible = true;
+                                a5.Text = Resultados[5].ToString();
+                                label6.Visible = true;
+                                a6.Visible = true;
+                                a6.Text = Resultados[6].ToString();
+                                label7.Visible = true;
+                                a7.Visible = true;
+                                a7.Text = Resultados[7].ToString();
+                                label8.Visible = true;
+                                a8.Visible = true;
+                                a8.Text = Resultados[8].ToString();
+                                label9.Visible = true;
+                                a9.Visible = true;
+                                a9.Text = Resultados[9].ToString();
                                 label10.Visible = true;
                                 a10.Visible = true;
-                                a10.Text = Resultados[0].ToString();
+                                a10.Text = Resultados[ultimo].ToString();
                                 break;
                         }
                         double r = 0;
@@ -544,7 +543,6 @@ namespace Practica1
                     switch (Resultados.Count - 1)
                     {
                         case 1:
-
                             label0.Visible = true;
                             a0.Visible = true;
                             a0.Text = Resultados[ultimo].ToString();
@@ -555,12 +553,12 @@ namespace Practica1
                         case 2:
                             label0.Visible = true;
                             a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
                             label1.Visible = true;
                             a1.Visible = true;
+                            a1.Text = Resultados[1].ToString();
                             label2.Visible = true;
                             a2.Visible = true;
-                            a0.Text = Resultados[ultimo].ToString();
-                            a1.Text = Resultados[1].ToString();
                             a2.Text = Resultados[0].ToString();
                             break;
                         case 3:
@@ -833,6 +831,8 @@ namespace Practica1
 
             if (checkedListBox1.SelectedIndex == 0) //Muestra los labels de Lineal
             {
+                Ajuste.Visible = true;
+                NAjuste.Visible = true;
                 Pendiente.Visible = true;
                 Ordenada.Visible = true;
                 NPendiente.Visible = true;
@@ -841,11 +841,15 @@ namespace Practica1
                 textBox3.Visible = false;
                 PuntoX.Visible = false;
                 textBox4.Visible = false;
+                label11.Visible = false;
+                label12.Visible = false;
             }
             else
             {
                 if (checkedListBox1.SelectedIndex == 1) //Oculta los labels de Lineal
                 {
+                    Ajuste.Visible = true;
+                    NAjuste.Visible = true;
                     Pendiente.Visible = false;
                     Ordenada.Visible = false;
                     NPendiente.Visible = false;
@@ -856,9 +860,13 @@ namespace Practica1
                     textBox3.Text = "";
                     PuntoX.Visible = false;
                     textBox4.Visible = false;
+                    label11.Visible = false;
+                    label12.Visible = false;
                 }
                 else
                 {
+                    Ajuste.Visible = false;
+                    NAjuste.Visible = false;
                     Pendiente.Visible = false;
                     Ordenada.Visible = false;
                     NPendiente.Visible = false;
@@ -869,6 +877,8 @@ namespace Practica1
                     textBox3.Enabled = false;
                     PuntoX.Visible = true;
                     textBox4.Visible = true;
+                    label11.Visible = true;
+                    label12.Visible = true;
                 }
             }
         }
