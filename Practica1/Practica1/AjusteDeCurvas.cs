@@ -475,8 +475,291 @@ namespace Practica1
                         S = S + (L * puntosy[i]);
                         i++;
                     }
-                    a0.Visible = true;
-                    a0.Text = S.ToString();
+                    label11.Visible = true;
+                    label12.Visible = true;
+                    label12.Text = S.ToString();
+
+
+                    Pendiente.Visible = false;
+                    Ordenada.Visible = false;
+                    //ARMAMOS UNA MATRIZ PARA PODER RESOLVERLA MEDIANTE GAUSS-JORDAN
+                    double[,] matrix = new double[grado + 1, grado + 2];
+                    ex = 0;
+                    ey = 0;
+                    //CICLO INICIALIZA LA MATRIZ EN 0
+                    for (int k = 0; k <= grado; k++)
+                    {
+                        for (int j = 0; j <= grado + 1; j++)
+                        {
+                            matrix[k, j] = 0;
+                        }
+                    }
+                    //LA LLENAMOS
+                    for (int k = 0; k <= grado; k++)
+                    {
+                        for (int j = 0; j <= grado +1; j++)
+                        {
+                            matrix[k, j] = Math.Pow(puntosx[k], j);
+                        }
+                    }
+
+                    for (int k = 0; k <= grado; k++)
+                    {
+                        matrix[k, grado + 1] = puntosy[k];
+                    }
+
+                    //RESOLVEMOS MEDIANTE GAUSS-JORDAN
+                    //RESULTADOS
+                    List<double> Resultados = new List<double>();
+                    double coeficiente = 0;
+                    int a = 0;
+                    int b = 0;
+                    int d = 0;
+                    for (a = 0; a < grado + 1; a++)
+                    {
+                        coeficiente = matrix[a, a];
+                        for (b = 0; b <= grado + 1; b++)
+                        {
+                            matrix[a, b] = matrix[a, b] / coeficiente;
+                        }
+                        for (b = 0; b < grado + 1; b++)
+                        {
+                            if (a != b)
+                            {
+                                coeficiente = matrix[b, a];
+                                for (d = 0; d <= grado + 1; d++)
+                                {
+                                    matrix[b, d] = matrix[b, d] - (coeficiente * matrix[a, d]);
+                                }
+                            }
+                        }
+                    }
+
+
+                    for (a = 0; a < grado + 1; a++)
+                    {
+                        Resultados.Add(matrix[a, grado + 1]);
+                    }
+                    int ultimo = Resultados.Count() - 1;
+                    switch (Resultados.Count - 1)
+                    {
+                        case 1:
+
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[0].ToString();
+                            break;
+                        case 2:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            a1.Text = Resultados[1].ToString();
+                            a2.Text = Resultados[0].ToString();
+                            break;
+                        case 3:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[2].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[1].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[0].ToString();
+                            break;
+                        case 4:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[3].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[2].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[1].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[0].ToString();
+                            break;
+                        case 5:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[4].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[3].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[2].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[1].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[0].ToString();
+                            break;
+                        case 6:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[5].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[4].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[3].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[2].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[1].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[0].ToString();
+                            break;
+                        case 7:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[6].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[5].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[4].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[3].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[2].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[1].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[0].ToString();
+                            break;
+                        case 8:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[7].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[6].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[5].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[4].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[3].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[2].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[1].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[0].ToString();
+                            break;
+                        case 9:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[8].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[7].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[6].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[5].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[4].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[3].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[2].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[1].ToString();
+                            label9.Visible = true;
+                            a9.Visible = true;
+                            a9.Text = Resultados[0].ToString();
+                            break;
+                        case 10:
+                            label0.Visible = true;
+                            a0.Visible = true;
+                            a0.Text = Resultados[ultimo].ToString();
+                            label1.Visible = true;
+                            a1.Visible = true;
+                            a1.Text = Resultados[9].ToString();
+                            label2.Visible = true;
+                            a2.Visible = true;
+                            a2.Text = Resultados[8].ToString();
+                            label3.Visible = true;
+                            a3.Visible = true;
+                            a3.Text = Resultados[7].ToString();
+                            label4.Visible = true;
+                            a4.Visible = true;
+                            a4.Text = Resultados[6].ToString();
+                            label5.Visible = true;
+                            a5.Visible = true;
+                            a5.Text = Resultados[5].ToString();
+                            label6.Visible = true;
+                            a6.Visible = true;
+                            a6.Text = Resultados[4].ToString();
+                            label7.Visible = true;
+                            a7.Visible = true;
+                            a7.Text = Resultados[3].ToString();
+                            label8.Visible = true;
+                            a8.Visible = true;
+                            a8.Text = Resultados[2].ToString();
+                            label9.Visible = true;
+                            a9.Visible = true;
+                            a9.Text = Resultados[1].ToString();
+                            label10.Visible = true;
+                            a10.Visible = true;
+                            a10.Text = Resultados[0].ToString();
+                            break;
+                    }
                 }
             }
         }
@@ -503,6 +786,8 @@ namespace Practica1
             a8.Text = "";
             a9.Text = "";
             a10.Text = "";
+            label12.Text = "";
+            NAjuste.Text = "";
             label0.Visible = false;
             a0.Visible = false;
             label1.Visible = false;
@@ -531,6 +816,10 @@ namespace Practica1
             textBox3.Visible = false;
             NPendiente.Visible = false;
             NOrdenada.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            NAjuste.Visible = false;
+            Ajuste.Visible = false;
         }
 
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -582,6 +871,11 @@ namespace Practica1
                     textBox4.Visible = true;
                 }
             }
+        }
+
+        private void AjusteDeCurvas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

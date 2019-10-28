@@ -70,6 +70,8 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.PuntoX = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label100
@@ -501,12 +503,33 @@
             this.textBox4.TabIndex = 89;
             this.textBox4.Visible = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(229, 273);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(151, 13);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "Funcion evaluada en el punto:";
+            this.label11.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(396, 273);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 13);
+            this.label12.TabIndex = 91;
+            this.label12.Visible = false;
+            // 
             // AjusteDeCurvas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(654, 330);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.PuntoX);
             this.Controls.Add(this.checkedListBox1);
@@ -552,6 +575,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AjusteDeCurvas";
             this.Text = "Ajuste de Curvas";
+            this.Load += new System.EventHandler(this.AjusteDeCurvas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,5 +625,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label PuntoX;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
