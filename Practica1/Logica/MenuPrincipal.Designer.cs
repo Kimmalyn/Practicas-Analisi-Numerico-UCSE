@@ -39,9 +39,8 @@
             this.unidad2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matricesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajusteDeCurvasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.integraciónNuméricaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajusteDeCurvasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,7 +124,7 @@
             // matricesToolStripMenuItem
             // 
             this.matricesToolStripMenuItem.Name = "matricesToolStripMenuItem";
-            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.matricesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.matricesToolStripMenuItem.Text = "Matrices";
             this.matricesToolStripMenuItem.Click += new System.EventHandler(this.MatricesToolStripMenuItem_Click);
             // 
@@ -137,27 +136,18 @@
             this.unidad3ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad3ToolStripMenuItem.Text = "Unidad 3";
             // 
-            // ajusteDeCurvasToolStripMenuItem
-            // 
-            this.ajusteDeCurvasToolStripMenuItem.Name = "ajusteDeCurvasToolStripMenuItem";
-            this.ajusteDeCurvasToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.ajusteDeCurvasToolStripMenuItem.Text = "Ajuste de curvas";
-            this.ajusteDeCurvasToolStripMenuItem.Click += new System.EventHandler(this.ajusteDeCurvasToolStripMenuItem_Click);
-            // 
             // unidad4ToolStripMenuItem
             // 
-            this.unidad4ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.integraciónNuméricaToolStripMenuItem});
             this.unidad4ToolStripMenuItem.Name = "unidad4ToolStripMenuItem";
             this.unidad4ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.unidad4ToolStripMenuItem.Text = "Unidad 4";
             // 
-            // integraciónNuméricaToolStripMenuItem
+            // ajusteDeCurvasToolStripMenuItem
             // 
-            this.integraciónNuméricaToolStripMenuItem.Name = "integraciónNuméricaToolStripMenuItem";
-            this.integraciónNuméricaToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.integraciónNuméricaToolStripMenuItem.Text = "Integración Numérica";
-            this.integraciónNuméricaToolStripMenuItem.Click += new System.EventHandler(this.integraciónNuméricaToolStripMenuItem_Click);
+            this.ajusteDeCurvasToolStripMenuItem.Name = "ajusteDeCurvasToolStripMenuItem";
+            this.ajusteDeCurvasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajusteDeCurvasToolStripMenuItem.Text = "Ajuste de curvas";
+            this.ajusteDeCurvasToolStripMenuItem.Click += new System.EventHandler(this.ajusteDeCurvasToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -190,7 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem secanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matricesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajusteDeCurvasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem integraciónNuméricaToolStripMenuItem;
     }
 }
 

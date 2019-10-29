@@ -58,12 +58,5 @@ namespace Practica1
             formularioajustecurvas.Owner = this;
             formularioajustecurvas.Show();
         }
-
-        private void integraciónNuméricaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form formulariointegracion = new IntegracionNumerica();
-            formulariointegracion.Owner = this;
-            formulariointegracion.Show();
-        }
     }
 }

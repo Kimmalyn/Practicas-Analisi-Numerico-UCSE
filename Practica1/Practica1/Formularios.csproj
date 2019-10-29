@@ -59,6 +59,12 @@
     <Compile Include="AjusteDeCurvas.Designer.cs">
       <DependentUpon>AjusteDeCurvas.cs</DependentUpon>
     </Compile>
+    <Compile Include="IntegracionNumerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntegracionNumerica.Designer.cs">
+      <DependentUpon>IntegracionNumerica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Matrices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AjusteDeCurvas.resx">
       <DependentUpon>AjusteDeCurvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntegracionNumerica.resx">
+      <DependentUpon>IntegracionNumerica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Matrices.resx">
       <DependentUpon>Matrices.cs</DependentUpon>
