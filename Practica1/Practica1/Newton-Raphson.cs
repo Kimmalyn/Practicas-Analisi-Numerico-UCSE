@@ -21,7 +21,8 @@ namespace Practica1
         {
             double Funcion(double x)
             {
-                return ((10 * x + 20) / ((x * x) + 4 * x + 5)) + 2;
+                return -2.1479 * x + 18.8164;
+                //return ((10 * x + 20) / ((x * x) + 4 * x + 5)) + 2;
                 //Math.Abs((x * x) - 4) + 2 * x;
                 //EJERCICIO 2 Math.Log(x)+(1/x)-3;
             } 
