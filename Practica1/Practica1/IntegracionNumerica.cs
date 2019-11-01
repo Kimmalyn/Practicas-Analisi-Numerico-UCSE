@@ -26,7 +26,8 @@ namespace Practica1
 
             double funcion (double x)
             {
-                return (Math.Pow(Math.E, x)) * (1 - (0.5 * Math.Pow(x, 2)));
+                return (((-0.75 * Math.Pow(x, 2)) - x + 4) - ((0.0625 * Math.Pow(x, 4)) - (0.25 * Math.Pow(x, 3))));
+                //(Math.Pow(Math.E, x)) * (1 - (0.5 * Math.Pow(x, 2)));
                 //(1 / (x + 0.5)) + (0.25 * Math.Pow(x, 2));
                 //Math.Log(1 + Math.Pow(x,2));
             }
