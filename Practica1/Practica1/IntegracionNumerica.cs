@@ -26,7 +26,9 @@ namespace Practica1
 
             double funcion (double x)
             {
-                return Math.Log(1 + Math.Pow(x,2));
+                return (Math.Pow(Math.E, x)) * (1 - (0.5 * Math.Pow(x, 2)));
+                //(1 / (x + 0.5)) + (0.25 * Math.Pow(x, 2));
+                //Math.Log(1 + Math.Pow(x,2));
             }
 
             if (checkedListBox1.GetItemChecked(0) == true)//metodo del trapecio simple
@@ -106,6 +108,16 @@ namespace Practica1
             }
 
             
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
