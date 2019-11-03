@@ -26,7 +26,8 @@ namespace Practica1
 
             double funcion (double x)
             {
-                return (((-0.75 * Math.Pow(x, 2)) - x + 4) - ((0.0625 * Math.Pow(x, 4)) - (0.25 * Math.Pow(x, 3))));
+                return ((0.0625 * Math.Pow(x, 4)) - (0.25 * Math.Pow(x, 3))); // - (((-0.75 * Math.Pow(x, 2)) - x + 4))
+                //(((-0.75 * Math.Pow(x, 2)) - x + 4) - ((0.0625 * Math.Pow(x, 4)) - (0.25 * Math.Pow(x, 3))));
                 //(Math.Pow(Math.E, x)) * (1 - (0.5 * Math.Pow(x, 2)));
                 //(1 / (x + 0.5)) + (0.25 * Math.Pow(x, 2));
                 //Math.Log(1 + Math.Pow(x,2));
@@ -111,14 +112,14 @@ namespace Practica1
             
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
+            if (e.NewValue == CheckState.Checked && checkedListBox1.CheckedItems.Count > 0)
+            {
+                checkedListBox1.ItemCheck -= checkedListBox1_ItemCheck;
+                checkedListBox1.SetItemChecked(checkedListBox1.CheckedIndices[0], false);
+                checkedListBox1.ItemCheck += checkedListBox1_ItemCheck;
+            }
         }
     }
 }
